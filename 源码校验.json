@@ -1,0 +1,1717 @@
+{
+  "formatVersion": 2,
+  "version": "20261114-batch-contract-0012",
+  "createdAt": "2026-11-15T22:12:05.3307517+08:00",
+  "note": "Current source snapshot; excludes private env, dependencies, builds, runtime data, verification evidence/logs and self. Verification history is retained separately.",
+  "generated": [],
+  "files": [
+    {
+      "target": ".gitignore",
+      "sha256": "0ab79d86874a43a8ca9ad670a00607f731fadd48d6498ca52872d48877ea7dee"
+    },
+    {
+      "target": ".vscode/tasks.json",
+      "sha256": "114c19a85f753a7349653845e987544e0fa88b0486dbe553c868fac15c7c5143"
+    },
+    {
+      "target": "01_商家端/.vscode/tasks.json",
+      "sha256": "5d98f39bfcdc9ea711e55f645a0aa4bf99291d9efa0ca35950022c47426a265e"
+    },
+    {
+      "target": "01_商家端/端配置.json",
+      "sha256": "81bee774ce65ce61439eeea688dfc294bb24d807df543caeee8b41889f086a24"
+    },
+    {
+      "target": "01_商家端/AGENTS.md",
+      "sha256": "456f5ae9881bf20884fc516be990281246474d44a743901f426e59dbd5634018"
+    },
+    {
+      "target": "01_商家端/miniprogram/app.js",
+      "sha256": "6faff7899b30db946222d71b39bcbee945fb3b93fc59b6c6a384bb5a79ec1499"
+    },
+    {
+      "target": "01_商家端/miniprogram/app.json",
+      "sha256": "c818de600ee9b7ab307916f11816238038687402e5fb21840cbea53948c5ace9"
+    },
+    {
+      "target": "01_商家端/miniprogram/app.wxss",
+      "sha256": "fd0362eae31852fc6054b6fa447d13fa95c8047c41cbce79fbca2e20e101f97f"
+    },
+    {
+      "target": "01_商家端/miniprogram/config.js",
+      "sha256": "0d93582684b7adbe4d128dc0155265382eb5bcbce6af2bc0dcc4cbff6c67697a"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/delivery/task-detail/task-detail.js",
+      "sha256": "c3c185851f7ebdda41cd96ed2b0706a5a37de93853e4c7c7ecb88bc4ee7537bc"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/delivery/task-detail/task-detail.json",
+      "sha256": "3d959862a7f603fa13e2b1d4796b1070e27758e7e0335d0d9a67d599e6b23719"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/delivery/task-detail/task-detail.wxml",
+      "sha256": "088a75d0fe0a4c59d65d73b984f5c4b633ae0a1eafd32174b297b939dc3f13a0"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/delivery/task-detail/task-detail.wxss",
+      "sha256": "65d4d482ac1586b7670da4419b8e64adcb7dea7fce75b228e1b2315729f97f3d"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/delivery/tasks/tasks.js",
+      "sha256": "c670614f3e4d5e7e0bb3154125854adb92c738b5fbc302f9554f50018cbea844"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/delivery/tasks/tasks.json",
+      "sha256": "0fadb2fa007cdb2d3a0afffa5a522e6ca4cb5e3eb05dc627b3a1308c770f8c83"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/delivery/tasks/tasks.wxml",
+      "sha256": "1ba8d65d1196a3589cbf4e909a8b96019363186c5683ac92bf398ab4f9f48fb9"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/delivery/tasks/tasks.wxss",
+      "sha256": "e77967247285840a46700885da8e433181737fe7cb99fea69577d4c0b8d1ef51"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/login/login.js",
+      "sha256": "a02f1ba846b7f64d60db620e61fe3951c6210591c0b592c63a10fd0f411aba77"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/login/login.json",
+      "sha256": "69cf61be268a97eda90c5df0cd1b5f0105551c11d36827eba8316fdf08fd7cf8"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/login/login.wxml",
+      "sha256": "d2f55cdc8caf2624eb8214ee30795a572015dff96a8cd306f67f36c16155a777"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/login/login.wxss",
+      "sha256": "b206290d2854b231e14e89ceb4a3a7bc1f055816385d7a69e385ae4c23df250e"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/checkout/checkout.js",
+      "sha256": "a7d3bf5a7129991f7345eb087d2179b2a55f1895de86d5fb545a9dd14bde8cb7"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/checkout/checkout.json",
+      "sha256": "f2e9b387be7f1ee7b748dbc1c6193100374aa686029b682bec1d8a1a729f331f"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/checkout/checkout.wxml",
+      "sha256": "610bf7a53d9ebef2349e6a12e5de1ebb327dcad3767ee40418daf6de5d0851de"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/checkout/checkout.wxss",
+      "sha256": "17ff398b9f0c3a84249e119700aa782ea7ec547b8dcddeafff8786324aa514ae"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/home/home.js",
+      "sha256": "013a5d3196c5aa1bdea174b1af58fd5a3452f7fecfd4b114832df1e6f3556ec2"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/home/home.json",
+      "sha256": "a5461cf1869b85d0ea1dcdada57a38e30cd54480a0bd8ab5c83f094495ed1e32"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/home/home.wxml",
+      "sha256": "a99ac2341e600127139af2eb6a7fa3ceead8b48a01aeccd5b7b2e9eae81debaf"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/home/home.wxss",
+      "sha256": "e115635ad2eee4cc87db1b0c8a882fae49671b324247444fddee58f7822e3708"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/messages/messages.js",
+      "sha256": "8c5f49687d80afc15b5986dfaf49706ce33bd3a9820384ae5d66c507d2f233bf"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/messages/messages.json",
+      "sha256": "bcce27562fa3e5047552824ac09c6f5a57026fe3036449693161f8990535c5f5"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/messages/messages.wxml",
+      "sha256": "d9ef5b6612aa885d87bf92b171996751558e8e88fb94c5835985dcc382d88159"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/messages/messages.wxss",
+      "sha256": "b13df91d72d158a95fa7b18ef4bbefb3bc7595205b9b4b81b6bdc4bacaa38a0d"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/order-detail/order-detail.js",
+      "sha256": "d9b45cd3aee0bdd2fde35a51626fd4f06b2929963e4665aa120684266a427f60"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/order-detail/order-detail.json",
+      "sha256": "0b939286e8baddd3c3d2c46fdeb6ed75dbf16e8f523b1bcbbc329be5f36fa00a"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/order-detail/order-detail.wxml",
+      "sha256": "93993ef81d8d5e8add0c6379c3442a020ae1d6a49525953f2676d9d3dea250bc"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/order-detail/order-detail.wxss",
+      "sha256": "6976ecb9864aa8ca7d407c777e85dd69d2fca257a5f9aac1c35ea988e93b143b"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/orders/orders.js",
+      "sha256": "d8a49829d3ca861961bc45f58d02ba2979ea62ca52231817aeea6e762021f1cf"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/orders/orders.json",
+      "sha256": "516da4e765ffb1e38fa82491dfd6cf8ace12c314c13b14f44223ddec5dda73f1"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/orders/orders.wxml",
+      "sha256": "323ae6e5418d4b1a433e19545dfdf637a6c2b63f89b96b9c7bfced385b20f63d"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/orders/orders.wxss",
+      "sha256": "240e603b824c69abad11700539411e1c31e8d2609c5ef6fc909d649f4859a59d"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/profile/profile.js",
+      "sha256": "42c208b0673cb02d383698e61272455f9f5491a63cb98b00a66d652fd56d2732"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/profile/profile.json",
+      "sha256": "dd1e0ebcd7230d3da8b1ed7bf8f65ba69e0540fc60ba9873751e98dff5f401fc"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/profile/profile.wxml",
+      "sha256": "b71693e36f200925b213cf7bb54263ebc0c154fafd4f21b41affa51ea5424128"
+    },
+    {
+      "target": "01_商家端/miniprogram/pages/user/profile/profile.wxss",
+      "sha256": "500d1489c2e4774d6e7632cb5283bfb520989150ae0a04c792fc5dd718f81adc"
+    },
+    {
+      "target": "01_商家端/miniprogram/project.config.json",
+      "sha256": "40a430abea1f7e86cb55e2e16d78a7b244105f119c48156ff1bd9f9ada7592fd"
+    },
+    {
+      "target": "01_商家端/miniprogram/sitemap.json",
+      "sha256": "553fd7a80252c17cd71d9930ac990f97a873383c3a884942ec11e9d9bb625b18"
+    },
+    {
+      "target": "01_商家端/miniprogram/utils/api.js",
+      "sha256": "29cb951eaf6d0f3f1596e0697551ebe8119852380fcaadfd6d09b4be9679f795"
+    },
+    {
+      "target": "01_商家端/miniprogram/utils/batch.js",
+      "sha256": "d0f09120e5e418371bcd5983c52935dcd4868bd3817a11756c598d7c11d21882"
+    },
+    {
+      "target": "01_商家端/miniprogram/utils/location.js",
+      "sha256": "e847e2d805ea97db80c57aaf0f4f831100907d8f0aae4b066d6535f66f1d5678"
+    },
+    {
+      "target": "01_商家端/miniprogram/utils/notifications.js",
+      "sha256": "4541815eef382e20a4a7123948fef12f23dbaf423aa1b46f9c8ab8f416a45e25"
+    },
+    {
+      "target": "01_商家端/miniprogram/utils/pending.js",
+      "sha256": "f67c5ddea16dcae9ee9cbfcc2655754bd6754967c5759551f42fa3490cea148c"
+    },
+    {
+      "target": "01_商家端/README.md",
+      "sha256": "2ce32d9b2252f413ee77a4ecefb1f151d78fe63b2e4f87d0178adcb2c5b84563"
+    },
+    {
+      "target": "01_商家端/scripts/frontend.ps1",
+      "sha256": "c65b90f465bb4c1d7b4ad917c2b638047d172a666980e2fa232d1d8741fdf6ed"
+    },
+    {
+      "target": "01_商家端/THIRD_PARTY_NOTICES.md",
+      "sha256": "18a0dedaa7c91bc0d341b846ac9339ef13d819da28282c46f465e0cac16ee4ae"
+    },
+    {
+      "target": "01_商家端/web/.env.development",
+      "sha256": "97a9659cea5afaecdaed8517a2e4ecb8f756a8ea48456a0592f977afae69d9f8"
+    },
+    {
+      "target": "01_商家端/web/index.html",
+      "sha256": "d11b847cc9c62bd8da861f263875f1c357d3401b9e87fa01b5a33196e7543bcc"
+    },
+    {
+      "target": "01_商家端/web/package-lock.json",
+      "sha256": "d77845b3860226931bc472dca248872a3327cd1442d848bee56284d71d4f9d71"
+    },
+    {
+      "target": "01_商家端/web/package.json",
+      "sha256": "de1f62482819251aceea9415f7d49c6fcb7168952fc86f022e59ce3462af7606"
+    },
+    {
+      "target": "01_商家端/web/public/favicon.svg",
+      "sha256": "08dd7fca11248f74c7b408be5542b3bb1050355c7c8b4caf9aacdad1b8837650"
+    },
+    {
+      "target": "01_商家端/web/src/admin-input.ts",
+      "sha256": "9e144b9b6013a68da896e29e25eb122b966f2d084495a00fb2fc657a18e39750"
+    },
+    {
+      "target": "01_商家端/web/src/api.ts",
+      "sha256": "2e3aa4ec271678e44983a9b4de87b542f87031dbbfc71939465a7cf55c1daeb1"
+    },
+    {
+      "target": "01_商家端/web/src/App.tsx",
+      "sha256": "3b04f18f2bae6011abd34cdbfb5a0da70ab59ea655b02e10c5f012196ba32d42"
+    },
+    {
+      "target": "01_商家端/web/src/auth.tsx",
+      "sha256": "425d52aa8710e48479389234e1b58e85a4d00343a32004544dbc84e40b32eab3"
+    },
+    {
+      "target": "01_商家端/web/src/batch.d.ts",
+      "sha256": "2694fa5a7633044def403c09cfc01962503798aed81aedf7efc5aef93c527984"
+    },
+    {
+      "target": "01_商家端/web/src/batch.js",
+      "sha256": "21b0356bdbfc69acafd7d916ecfb1a2678371e2e57bdf46dda07be4753d6ae29"
+    },
+    {
+      "target": "01_商家端/web/src/BatchPanel.tsx",
+      "sha256": "221d0ecabb997e7c56c6d7a690877d9b518cdb60500bfc0666e359e4c84c3a8b"
+    },
+    {
+      "target": "01_商家端/web/src/commands.ts",
+      "sha256": "e807ad9873d289a6a67ad569831d49ff53a249f9768e83dc2eb9a2ecedd2fc2c"
+    },
+    {
+      "target": "01_商家端/web/src/components.tsx",
+      "sha256": "b0d69a77b2884ea4fbc5eadd8cb1395e6fbfd737bfd8ebdfa63b24884880ab8a"
+    },
+    {
+      "target": "01_商家端/web/src/location.ts",
+      "sha256": "d4201795d2628ebb6e965e2506ac76a402268e7a0e3fc29d8fcc5d856a370e2d"
+    },
+    {
+      "target": "01_商家端/web/src/main.tsx",
+      "sha256": "10678c5fffd857e4a654d92aef22f44c32ba0af5b71ada30b40cf8e39b157fc8"
+    },
+    {
+      "target": "01_商家端/web/src/NotificationCenter.tsx",
+      "sha256": "16e9d3e46d0b2684a76278b421798d8cdaccea1ed5b82526a069b768590809b8"
+    },
+    {
+      "target": "01_商家端/web/src/notifications.d.ts",
+      "sha256": "2e8592c9d5a7adfe78fc1defd2011e95f35d2e447688b67018ef4f0264eb448a"
+    },
+    {
+      "target": "01_商家端/web/src/notifications.js",
+      "sha256": "0ba5c92ca567626da3a26671de278fa46800994d5db408446137024818622964"
+    },
+    {
+      "target": "01_商家端/web/src/pages/Admin.tsx",
+      "sha256": "5d2ff8176aaf7384c67b2c31aa53fef37a2acec11db87668f5506e85050bf825"
+    },
+    {
+      "target": "01_商家端/web/src/pages/Delivery.tsx",
+      "sha256": "79dc4b5da8c7a232f3e576067b4ea134ee230b95e35532d3edb66829c08d81f2"
+    },
+    {
+      "target": "01_商家端/web/src/pages/DeliveryPoints.tsx",
+      "sha256": "d08628ea5040216bea42b9f92997e42cb2a6226539fa8e116e5f28479d95fcf9"
+    },
+    {
+      "target": "01_商家端/web/src/pages/User.tsx",
+      "sha256": "056ca6c674ee832c563fac1aec3400b0e6b23b0a0ec37d6ed7082c82fa63dfe0"
+    },
+    {
+      "target": "01_商家端/web/src/pending.d.ts",
+      "sha256": "725755faa4c06ff19552d4b16f696fd4d86f4f9b5860e797664254a237d138f8"
+    },
+    {
+      "target": "01_商家端/web/src/pending.js",
+      "sha256": "58b753d057149a9a71ff9ddbc2b8f2388683a5e4d3ea440ccf57e6b049e4ea99"
+    },
+    {
+      "target": "01_商家端/web/src/session.d.ts",
+      "sha256": "390660ced0888e69f6199c94ee01309ee8fb6b463cd28d752622c332427ad840"
+    },
+    {
+      "target": "01_商家端/web/src/session.js",
+      "sha256": "c62f404ae339b57092d073789984bc8af719b6371f0a85b2f8bf7c34e9af5fdf"
+    },
+    {
+      "target": "01_商家端/web/src/styles.css",
+      "sha256": "68153b318cbd5c45bf2e4b64b4814a9d39b2e34168ae2ebb3c4c9f7f28176e39"
+    },
+    {
+      "target": "01_商家端/web/src/types.ts",
+      "sha256": "86b02bd5d437021ffb23b3392c6eb2a7245c5beb144427100ca3a4bba6829b0c"
+    },
+    {
+      "target": "01_商家端/web/src/vite-env.d.ts",
+      "sha256": "1c3ebdcfd5f12c65faf4fedad95fe88ffafb11c8bc56eceeb75ddab6ae00fd30"
+    },
+    {
+      "target": "01_商家端/web/tests/admin.test.mjs",
+      "sha256": "0c22a056931290afec9bad9eb03411cb0f7fb041b37a2991b0028bb07c402ea5"
+    },
+    {
+      "target": "01_商家端/web/tests/batch.test.mjs",
+      "sha256": "949865ee334485589909115625ca0a6987f5dfa6c03a1c71e2c0241622a810ca"
+    },
+    {
+      "target": "01_商家端/web/tests/notifications.test.mjs",
+      "sha256": "0f3737859ded25379305ab8602f19d9abafab18dcf730a3d2f77fd577fa8246b"
+    },
+    {
+      "target": "01_商家端/web/tests/pending.test.mjs",
+      "sha256": "232e723584b998c32dc7c4fea9c58a3e473479b876babb8798a633cb0092d96e"
+    },
+    {
+      "target": "01_商家端/web/tests/router.test.mjs",
+      "sha256": "4e6f7716270fb1d35f62365de9e3d86da6ee1c9b6ec1791ec7e3723590945412"
+    },
+    {
+      "target": "01_商家端/web/tests/session.test.mjs",
+      "sha256": "2f586cb218bfa7bb464f6ddef51fabb8382dd42902993f085177928a1f29d66f"
+    },
+    {
+      "target": "01_商家端/web/tsconfig.json",
+      "sha256": "fb6272a3ab9776b3b062024bbe68a0d4be3a86b677f9a37aa14aec1eb16c4a06"
+    },
+    {
+      "target": "01_商家端/web/tsconfig.node.json",
+      "sha256": "b5805e4738367879e03012a1807daba34fc4dfbfab445472529f2611d4d41fb0"
+    },
+    {
+      "target": "01_商家端/web/vite.config.ts",
+      "sha256": "435ced9bcf741d3cbe3f6aec939e7ee32bb9db64af41e69d3bc13e6d9f36aad9"
+    },
+    {
+      "target": "02_用户端/.vscode/tasks.json",
+      "sha256": "b088a6c190160d1a995abb7ce2d749b6922891f583022a6beec610f7dae2a142"
+    },
+    {
+      "target": "02_用户端/端配置.json",
+      "sha256": "4c6aaa00be05caa403cc542c6cd9e1e3613b93e5574a41c98b937c350cf63dba"
+    },
+    {
+      "target": "02_用户端/AGENTS.md",
+      "sha256": "456f5ae9881bf20884fc516be990281246474d44a743901f426e59dbd5634018"
+    },
+    {
+      "target": "02_用户端/miniprogram/app.js",
+      "sha256": "6faff7899b30db946222d71b39bcbee945fb3b93fc59b6c6a384bb5a79ec1499"
+    },
+    {
+      "target": "02_用户端/miniprogram/app.json",
+      "sha256": "c818de600ee9b7ab307916f11816238038687402e5fb21840cbea53948c5ace9"
+    },
+    {
+      "target": "02_用户端/miniprogram/app.wxss",
+      "sha256": "fd0362eae31852fc6054b6fa447d13fa95c8047c41cbce79fbca2e20e101f97f"
+    },
+    {
+      "target": "02_用户端/miniprogram/config.js",
+      "sha256": "0d93582684b7adbe4d128dc0155265382eb5bcbce6af2bc0dcc4cbff6c67697a"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/delivery/task-detail/task-detail.js",
+      "sha256": "c3c185851f7ebdda41cd96ed2b0706a5a37de93853e4c7c7ecb88bc4ee7537bc"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/delivery/task-detail/task-detail.json",
+      "sha256": "3d959862a7f603fa13e2b1d4796b1070e27758e7e0335d0d9a67d599e6b23719"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/delivery/task-detail/task-detail.wxml",
+      "sha256": "088a75d0fe0a4c59d65d73b984f5c4b633ae0a1eafd32174b297b939dc3f13a0"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/delivery/task-detail/task-detail.wxss",
+      "sha256": "65d4d482ac1586b7670da4419b8e64adcb7dea7fce75b228e1b2315729f97f3d"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/delivery/tasks/tasks.js",
+      "sha256": "c670614f3e4d5e7e0bb3154125854adb92c738b5fbc302f9554f50018cbea844"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/delivery/tasks/tasks.json",
+      "sha256": "0fadb2fa007cdb2d3a0afffa5a522e6ca4cb5e3eb05dc627b3a1308c770f8c83"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/delivery/tasks/tasks.wxml",
+      "sha256": "1ba8d65d1196a3589cbf4e909a8b96019363186c5683ac92bf398ab4f9f48fb9"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/delivery/tasks/tasks.wxss",
+      "sha256": "e77967247285840a46700885da8e433181737fe7cb99fea69577d4c0b8d1ef51"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/login/login.js",
+      "sha256": "a02f1ba846b7f64d60db620e61fe3951c6210591c0b592c63a10fd0f411aba77"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/login/login.json",
+      "sha256": "69cf61be268a97eda90c5df0cd1b5f0105551c11d36827eba8316fdf08fd7cf8"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/login/login.wxml",
+      "sha256": "d2f55cdc8caf2624eb8214ee30795a572015dff96a8cd306f67f36c16155a777"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/login/login.wxss",
+      "sha256": "b206290d2854b231e14e89ceb4a3a7bc1f055816385d7a69e385ae4c23df250e"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/checkout/checkout.js",
+      "sha256": "a7d3bf5a7129991f7345eb087d2179b2a55f1895de86d5fb545a9dd14bde8cb7"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/checkout/checkout.json",
+      "sha256": "f2e9b387be7f1ee7b748dbc1c6193100374aa686029b682bec1d8a1a729f331f"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/checkout/checkout.wxml",
+      "sha256": "610bf7a53d9ebef2349e6a12e5de1ebb327dcad3767ee40418daf6de5d0851de"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/checkout/checkout.wxss",
+      "sha256": "17ff398b9f0c3a84249e119700aa782ea7ec547b8dcddeafff8786324aa514ae"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/home/home.js",
+      "sha256": "013a5d3196c5aa1bdea174b1af58fd5a3452f7fecfd4b114832df1e6f3556ec2"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/home/home.json",
+      "sha256": "a5461cf1869b85d0ea1dcdada57a38e30cd54480a0bd8ab5c83f094495ed1e32"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/home/home.wxml",
+      "sha256": "a99ac2341e600127139af2eb6a7fa3ceead8b48a01aeccd5b7b2e9eae81debaf"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/home/home.wxss",
+      "sha256": "e115635ad2eee4cc87db1b0c8a882fae49671b324247444fddee58f7822e3708"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/messages/messages.js",
+      "sha256": "8c5f49687d80afc15b5986dfaf49706ce33bd3a9820384ae5d66c507d2f233bf"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/messages/messages.json",
+      "sha256": "bcce27562fa3e5047552824ac09c6f5a57026fe3036449693161f8990535c5f5"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/messages/messages.wxml",
+      "sha256": "d9ef5b6612aa885d87bf92b171996751558e8e88fb94c5835985dcc382d88159"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/messages/messages.wxss",
+      "sha256": "b13df91d72d158a95fa7b18ef4bbefb3bc7595205b9b4b81b6bdc4bacaa38a0d"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/order-detail/order-detail.js",
+      "sha256": "d9b45cd3aee0bdd2fde35a51626fd4f06b2929963e4665aa120684266a427f60"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/order-detail/order-detail.json",
+      "sha256": "0b939286e8baddd3c3d2c46fdeb6ed75dbf16e8f523b1bcbbc329be5f36fa00a"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/order-detail/order-detail.wxml",
+      "sha256": "93993ef81d8d5e8add0c6379c3442a020ae1d6a49525953f2676d9d3dea250bc"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/order-detail/order-detail.wxss",
+      "sha256": "6976ecb9864aa8ca7d407c777e85dd69d2fca257a5f9aac1c35ea988e93b143b"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/orders/orders.js",
+      "sha256": "d8a49829d3ca861961bc45f58d02ba2979ea62ca52231817aeea6e762021f1cf"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/orders/orders.json",
+      "sha256": "516da4e765ffb1e38fa82491dfd6cf8ace12c314c13b14f44223ddec5dda73f1"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/orders/orders.wxml",
+      "sha256": "323ae6e5418d4b1a433e19545dfdf637a6c2b63f89b96b9c7bfced385b20f63d"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/orders/orders.wxss",
+      "sha256": "240e603b824c69abad11700539411e1c31e8d2609c5ef6fc909d649f4859a59d"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/profile/profile.js",
+      "sha256": "42c208b0673cb02d383698e61272455f9f5491a63cb98b00a66d652fd56d2732"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/profile/profile.json",
+      "sha256": "dd1e0ebcd7230d3da8b1ed7bf8f65ba69e0540fc60ba9873751e98dff5f401fc"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/profile/profile.wxml",
+      "sha256": "b71693e36f200925b213cf7bb54263ebc0c154fafd4f21b41affa51ea5424128"
+    },
+    {
+      "target": "02_用户端/miniprogram/pages/user/profile/profile.wxss",
+      "sha256": "500d1489c2e4774d6e7632cb5283bfb520989150ae0a04c792fc5dd718f81adc"
+    },
+    {
+      "target": "02_用户端/miniprogram/project.config.json",
+      "sha256": "40a430abea1f7e86cb55e2e16d78a7b244105f119c48156ff1bd9f9ada7592fd"
+    },
+    {
+      "target": "02_用户端/miniprogram/sitemap.json",
+      "sha256": "553fd7a80252c17cd71d9930ac990f97a873383c3a884942ec11e9d9bb625b18"
+    },
+    {
+      "target": "02_用户端/miniprogram/utils/api.js",
+      "sha256": "29cb951eaf6d0f3f1596e0697551ebe8119852380fcaadfd6d09b4be9679f795"
+    },
+    {
+      "target": "02_用户端/miniprogram/utils/batch.js",
+      "sha256": "d0f09120e5e418371bcd5983c52935dcd4868bd3817a11756c598d7c11d21882"
+    },
+    {
+      "target": "02_用户端/miniprogram/utils/location.js",
+      "sha256": "e847e2d805ea97db80c57aaf0f4f831100907d8f0aae4b066d6535f66f1d5678"
+    },
+    {
+      "target": "02_用户端/miniprogram/utils/notifications.js",
+      "sha256": "4541815eef382e20a4a7123948fef12f23dbaf423aa1b46f9c8ab8f416a45e25"
+    },
+    {
+      "target": "02_用户端/miniprogram/utils/pending.js",
+      "sha256": "f67c5ddea16dcae9ee9cbfcc2655754bd6754967c5759551f42fa3490cea148c"
+    },
+    {
+      "target": "02_用户端/README.md",
+      "sha256": "326b187421c5fb99c2e5a49f8925e42d76e26f10a01cfdc028180714c2385efa"
+    },
+    {
+      "target": "02_用户端/scripts/frontend.ps1",
+      "sha256": "c65b90f465bb4c1d7b4ad917c2b638047d172a666980e2fa232d1d8741fdf6ed"
+    },
+    {
+      "target": "02_用户端/THIRD_PARTY_NOTICES.md",
+      "sha256": "18a0dedaa7c91bc0d341b846ac9339ef13d819da28282c46f465e0cac16ee4ae"
+    },
+    {
+      "target": "02_用户端/web/.env.development",
+      "sha256": "35c749856e3387262db7f1813e4bdfb37e9a90f5bd4b26c34ea023f006b6733e"
+    },
+    {
+      "target": "02_用户端/web/index.html",
+      "sha256": "d11b847cc9c62bd8da861f263875f1c357d3401b9e87fa01b5a33196e7543bcc"
+    },
+    {
+      "target": "02_用户端/web/package-lock.json",
+      "sha256": "d77845b3860226931bc472dca248872a3327cd1442d848bee56284d71d4f9d71"
+    },
+    {
+      "target": "02_用户端/web/package.json",
+      "sha256": "dab45d1e4170b4c85f736b7a994349e007d87e415015eb3d8aec9853213206c4"
+    },
+    {
+      "target": "02_用户端/web/public/favicon.svg",
+      "sha256": "08dd7fca11248f74c7b408be5542b3bb1050355c7c8b4caf9aacdad1b8837650"
+    },
+    {
+      "target": "02_用户端/web/src/admin-input.ts",
+      "sha256": "9e144b9b6013a68da896e29e25eb122b966f2d084495a00fb2fc657a18e39750"
+    },
+    {
+      "target": "02_用户端/web/src/api.ts",
+      "sha256": "2e3aa4ec271678e44983a9b4de87b542f87031dbbfc71939465a7cf55c1daeb1"
+    },
+    {
+      "target": "02_用户端/web/src/App.tsx",
+      "sha256": "3b04f18f2bae6011abd34cdbfb5a0da70ab59ea655b02e10c5f012196ba32d42"
+    },
+    {
+      "target": "02_用户端/web/src/auth.tsx",
+      "sha256": "425d52aa8710e48479389234e1b58e85a4d00343a32004544dbc84e40b32eab3"
+    },
+    {
+      "target": "02_用户端/web/src/batch.d.ts",
+      "sha256": "2694fa5a7633044def403c09cfc01962503798aed81aedf7efc5aef93c527984"
+    },
+    {
+      "target": "02_用户端/web/src/batch.js",
+      "sha256": "21b0356bdbfc69acafd7d916ecfb1a2678371e2e57bdf46dda07be4753d6ae29"
+    },
+    {
+      "target": "02_用户端/web/src/BatchPanel.tsx",
+      "sha256": "221d0ecabb997e7c56c6d7a690877d9b518cdb60500bfc0666e359e4c84c3a8b"
+    },
+    {
+      "target": "02_用户端/web/src/commands.ts",
+      "sha256": "e807ad9873d289a6a67ad569831d49ff53a249f9768e83dc2eb9a2ecedd2fc2c"
+    },
+    {
+      "target": "02_用户端/web/src/components.tsx",
+      "sha256": "b0d69a77b2884ea4fbc5eadd8cb1395e6fbfd737bfd8ebdfa63b24884880ab8a"
+    },
+    {
+      "target": "02_用户端/web/src/location.ts",
+      "sha256": "d4201795d2628ebb6e965e2506ac76a402268e7a0e3fc29d8fcc5d856a370e2d"
+    },
+    {
+      "target": "02_用户端/web/src/main.tsx",
+      "sha256": "10678c5fffd857e4a654d92aef22f44c32ba0af5b71ada30b40cf8e39b157fc8"
+    },
+    {
+      "target": "02_用户端/web/src/NotificationCenter.tsx",
+      "sha256": "16e9d3e46d0b2684a76278b421798d8cdaccea1ed5b82526a069b768590809b8"
+    },
+    {
+      "target": "02_用户端/web/src/notifications.d.ts",
+      "sha256": "2e8592c9d5a7adfe78fc1defd2011e95f35d2e447688b67018ef4f0264eb448a"
+    },
+    {
+      "target": "02_用户端/web/src/notifications.js",
+      "sha256": "0ba5c92ca567626da3a26671de278fa46800994d5db408446137024818622964"
+    },
+    {
+      "target": "02_用户端/web/src/pages/Admin.tsx",
+      "sha256": "5d2ff8176aaf7384c67b2c31aa53fef37a2acec11db87668f5506e85050bf825"
+    },
+    {
+      "target": "02_用户端/web/src/pages/Delivery.tsx",
+      "sha256": "79dc4b5da8c7a232f3e576067b4ea134ee230b95e35532d3edb66829c08d81f2"
+    },
+    {
+      "target": "02_用户端/web/src/pages/DeliveryPoints.tsx",
+      "sha256": "d08628ea5040216bea42b9f92997e42cb2a6226539fa8e116e5f28479d95fcf9"
+    },
+    {
+      "target": "02_用户端/web/src/pages/User.tsx",
+      "sha256": "056ca6c674ee832c563fac1aec3400b0e6b23b0a0ec37d6ed7082c82fa63dfe0"
+    },
+    {
+      "target": "02_用户端/web/src/pending.d.ts",
+      "sha256": "725755faa4c06ff19552d4b16f696fd4d86f4f9b5860e797664254a237d138f8"
+    },
+    {
+      "target": "02_用户端/web/src/pending.js",
+      "sha256": "58b753d057149a9a71ff9ddbc2b8f2388683a5e4d3ea440ccf57e6b049e4ea99"
+    },
+    {
+      "target": "02_用户端/web/src/session.d.ts",
+      "sha256": "390660ced0888e69f6199c94ee01309ee8fb6b463cd28d752622c332427ad840"
+    },
+    {
+      "target": "02_用户端/web/src/session.js",
+      "sha256": "c62f404ae339b57092d073789984bc8af719b6371f0a85b2f8bf7c34e9af5fdf"
+    },
+    {
+      "target": "02_用户端/web/src/styles.css",
+      "sha256": "68153b318cbd5c45bf2e4b64b4814a9d39b2e34168ae2ebb3c4c9f7f28176e39"
+    },
+    {
+      "target": "02_用户端/web/src/types.ts",
+      "sha256": "86b02bd5d437021ffb23b3392c6eb2a7245c5beb144427100ca3a4bba6829b0c"
+    },
+    {
+      "target": "02_用户端/web/src/vite-env.d.ts",
+      "sha256": "1c3ebdcfd5f12c65faf4fedad95fe88ffafb11c8bc56eceeb75ddab6ae00fd30"
+    },
+    {
+      "target": "02_用户端/web/tests/admin.test.mjs",
+      "sha256": "0c22a056931290afec9bad9eb03411cb0f7fb041b37a2991b0028bb07c402ea5"
+    },
+    {
+      "target": "02_用户端/web/tests/batch.test.mjs",
+      "sha256": "949865ee334485589909115625ca0a6987f5dfa6c03a1c71e2c0241622a810ca"
+    },
+    {
+      "target": "02_用户端/web/tests/notifications.test.mjs",
+      "sha256": "0f3737859ded25379305ab8602f19d9abafab18dcf730a3d2f77fd577fa8246b"
+    },
+    {
+      "target": "02_用户端/web/tests/pending.test.mjs",
+      "sha256": "232e723584b998c32dc7c4fea9c58a3e473479b876babb8798a633cb0092d96e"
+    },
+    {
+      "target": "02_用户端/web/tests/router.test.mjs",
+      "sha256": "4e6f7716270fb1d35f62365de9e3d86da6ee1c9b6ec1791ec7e3723590945412"
+    },
+    {
+      "target": "02_用户端/web/tests/session.test.mjs",
+      "sha256": "2f586cb218bfa7bb464f6ddef51fabb8382dd42902993f085177928a1f29d66f"
+    },
+    {
+      "target": "02_用户端/web/tsconfig.json",
+      "sha256": "fb6272a3ab9776b3b062024bbe68a0d4be3a86b677f9a37aa14aec1eb16c4a06"
+    },
+    {
+      "target": "02_用户端/web/tsconfig.node.json",
+      "sha256": "b5805e4738367879e03012a1807daba34fc4dfbfab445472529f2611d4d41fb0"
+    },
+    {
+      "target": "02_用户端/web/vite.config.ts",
+      "sha256": "435ced9bcf741d3cbe3f6aec939e7ee32bb9db64af41e69d3bc13e6d9f36aad9"
+    },
+    {
+      "target": "03_骑手端/.vscode/tasks.json",
+      "sha256": "4894236d7c88e06a645adbebd2b37bf7ca6e58713f9363f30136bf3bdfa22fc8"
+    },
+    {
+      "target": "03_骑手端/端配置.json",
+      "sha256": "848ea25b49cd0dbb4b91715fa69e0277f0cb23f6292e7e04f203c057294d4cd1"
+    },
+    {
+      "target": "03_骑手端/AGENTS.md",
+      "sha256": "456f5ae9881bf20884fc516be990281246474d44a743901f426e59dbd5634018"
+    },
+    {
+      "target": "03_骑手端/miniprogram/app.js",
+      "sha256": "6faff7899b30db946222d71b39bcbee945fb3b93fc59b6c6a384bb5a79ec1499"
+    },
+    {
+      "target": "03_骑手端/miniprogram/app.json",
+      "sha256": "c818de600ee9b7ab307916f11816238038687402e5fb21840cbea53948c5ace9"
+    },
+    {
+      "target": "03_骑手端/miniprogram/app.wxss",
+      "sha256": "fd0362eae31852fc6054b6fa447d13fa95c8047c41cbce79fbca2e20e101f97f"
+    },
+    {
+      "target": "03_骑手端/miniprogram/config.js",
+      "sha256": "0d93582684b7adbe4d128dc0155265382eb5bcbce6af2bc0dcc4cbff6c67697a"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/delivery/task-detail/task-detail.js",
+      "sha256": "c3c185851f7ebdda41cd96ed2b0706a5a37de93853e4c7c7ecb88bc4ee7537bc"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/delivery/task-detail/task-detail.json",
+      "sha256": "3d959862a7f603fa13e2b1d4796b1070e27758e7e0335d0d9a67d599e6b23719"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/delivery/task-detail/task-detail.wxml",
+      "sha256": "088a75d0fe0a4c59d65d73b984f5c4b633ae0a1eafd32174b297b939dc3f13a0"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/delivery/task-detail/task-detail.wxss",
+      "sha256": "65d4d482ac1586b7670da4419b8e64adcb7dea7fce75b228e1b2315729f97f3d"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/delivery/tasks/tasks.js",
+      "sha256": "c670614f3e4d5e7e0bb3154125854adb92c738b5fbc302f9554f50018cbea844"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/delivery/tasks/tasks.json",
+      "sha256": "0fadb2fa007cdb2d3a0afffa5a522e6ca4cb5e3eb05dc627b3a1308c770f8c83"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/delivery/tasks/tasks.wxml",
+      "sha256": "1ba8d65d1196a3589cbf4e909a8b96019363186c5683ac92bf398ab4f9f48fb9"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/delivery/tasks/tasks.wxss",
+      "sha256": "e77967247285840a46700885da8e433181737fe7cb99fea69577d4c0b8d1ef51"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/login/login.js",
+      "sha256": "a02f1ba846b7f64d60db620e61fe3951c6210591c0b592c63a10fd0f411aba77"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/login/login.json",
+      "sha256": "69cf61be268a97eda90c5df0cd1b5f0105551c11d36827eba8316fdf08fd7cf8"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/login/login.wxml",
+      "sha256": "d2f55cdc8caf2624eb8214ee30795a572015dff96a8cd306f67f36c16155a777"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/login/login.wxss",
+      "sha256": "b206290d2854b231e14e89ceb4a3a7bc1f055816385d7a69e385ae4c23df250e"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/checkout/checkout.js",
+      "sha256": "a7d3bf5a7129991f7345eb087d2179b2a55f1895de86d5fb545a9dd14bde8cb7"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/checkout/checkout.json",
+      "sha256": "f2e9b387be7f1ee7b748dbc1c6193100374aa686029b682bec1d8a1a729f331f"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/checkout/checkout.wxml",
+      "sha256": "610bf7a53d9ebef2349e6a12e5de1ebb327dcad3767ee40418daf6de5d0851de"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/checkout/checkout.wxss",
+      "sha256": "17ff398b9f0c3a84249e119700aa782ea7ec547b8dcddeafff8786324aa514ae"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/home/home.js",
+      "sha256": "013a5d3196c5aa1bdea174b1af58fd5a3452f7fecfd4b114832df1e6f3556ec2"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/home/home.json",
+      "sha256": "a5461cf1869b85d0ea1dcdada57a38e30cd54480a0bd8ab5c83f094495ed1e32"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/home/home.wxml",
+      "sha256": "a99ac2341e600127139af2eb6a7fa3ceead8b48a01aeccd5b7b2e9eae81debaf"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/home/home.wxss",
+      "sha256": "e115635ad2eee4cc87db1b0c8a882fae49671b324247444fddee58f7822e3708"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/messages/messages.js",
+      "sha256": "8c5f49687d80afc15b5986dfaf49706ce33bd3a9820384ae5d66c507d2f233bf"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/messages/messages.json",
+      "sha256": "bcce27562fa3e5047552824ac09c6f5a57026fe3036449693161f8990535c5f5"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/messages/messages.wxml",
+      "sha256": "d9ef5b6612aa885d87bf92b171996751558e8e88fb94c5835985dcc382d88159"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/messages/messages.wxss",
+      "sha256": "b13df91d72d158a95fa7b18ef4bbefb3bc7595205b9b4b81b6bdc4bacaa38a0d"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/order-detail/order-detail.js",
+      "sha256": "d9b45cd3aee0bdd2fde35a51626fd4f06b2929963e4665aa120684266a427f60"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/order-detail/order-detail.json",
+      "sha256": "0b939286e8baddd3c3d2c46fdeb6ed75dbf16e8f523b1bcbbc329be5f36fa00a"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/order-detail/order-detail.wxml",
+      "sha256": "93993ef81d8d5e8add0c6379c3442a020ae1d6a49525953f2676d9d3dea250bc"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/order-detail/order-detail.wxss",
+      "sha256": "6976ecb9864aa8ca7d407c777e85dd69d2fca257a5f9aac1c35ea988e93b143b"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/orders/orders.js",
+      "sha256": "d8a49829d3ca861961bc45f58d02ba2979ea62ca52231817aeea6e762021f1cf"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/orders/orders.json",
+      "sha256": "516da4e765ffb1e38fa82491dfd6cf8ace12c314c13b14f44223ddec5dda73f1"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/orders/orders.wxml",
+      "sha256": "323ae6e5418d4b1a433e19545dfdf637a6c2b63f89b96b9c7bfced385b20f63d"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/orders/orders.wxss",
+      "sha256": "240e603b824c69abad11700539411e1c31e8d2609c5ef6fc909d649f4859a59d"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/profile/profile.js",
+      "sha256": "42c208b0673cb02d383698e61272455f9f5491a63cb98b00a66d652fd56d2732"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/profile/profile.json",
+      "sha256": "dd1e0ebcd7230d3da8b1ed7bf8f65ba69e0540fc60ba9873751e98dff5f401fc"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/profile/profile.wxml",
+      "sha256": "b71693e36f200925b213cf7bb54263ebc0c154fafd4f21b41affa51ea5424128"
+    },
+    {
+      "target": "03_骑手端/miniprogram/pages/user/profile/profile.wxss",
+      "sha256": "500d1489c2e4774d6e7632cb5283bfb520989150ae0a04c792fc5dd718f81adc"
+    },
+    {
+      "target": "03_骑手端/miniprogram/project.config.json",
+      "sha256": "40a430abea1f7e86cb55e2e16d78a7b244105f119c48156ff1bd9f9ada7592fd"
+    },
+    {
+      "target": "03_骑手端/miniprogram/sitemap.json",
+      "sha256": "553fd7a80252c17cd71d9930ac990f97a873383c3a884942ec11e9d9bb625b18"
+    },
+    {
+      "target": "03_骑手端/miniprogram/utils/api.js",
+      "sha256": "29cb951eaf6d0f3f1596e0697551ebe8119852380fcaadfd6d09b4be9679f795"
+    },
+    {
+      "target": "03_骑手端/miniprogram/utils/batch.js",
+      "sha256": "d0f09120e5e418371bcd5983c52935dcd4868bd3817a11756c598d7c11d21882"
+    },
+    {
+      "target": "03_骑手端/miniprogram/utils/location.js",
+      "sha256": "e847e2d805ea97db80c57aaf0f4f831100907d8f0aae4b066d6535f66f1d5678"
+    },
+    {
+      "target": "03_骑手端/miniprogram/utils/notifications.js",
+      "sha256": "4541815eef382e20a4a7123948fef12f23dbaf423aa1b46f9c8ab8f416a45e25"
+    },
+    {
+      "target": "03_骑手端/miniprogram/utils/pending.js",
+      "sha256": "f67c5ddea16dcae9ee9cbfcc2655754bd6754967c5759551f42fa3490cea148c"
+    },
+    {
+      "target": "03_骑手端/README.md",
+      "sha256": "3d536324937141b1efd1d918f1de7e38c518e47981402f7d4d4f6d0827144796"
+    },
+    {
+      "target": "03_骑手端/scripts/frontend.ps1",
+      "sha256": "c65b90f465bb4c1d7b4ad917c2b638047d172a666980e2fa232d1d8741fdf6ed"
+    },
+    {
+      "target": "03_骑手端/THIRD_PARTY_NOTICES.md",
+      "sha256": "18a0dedaa7c91bc0d341b846ac9339ef13d819da28282c46f465e0cac16ee4ae"
+    },
+    {
+      "target": "03_骑手端/web/.env.development",
+      "sha256": "93a29b06d794aea217954e925713d99df141077f80fe3cf28512a3e448264d6b"
+    },
+    {
+      "target": "03_骑手端/web/index.html",
+      "sha256": "d11b847cc9c62bd8da861f263875f1c357d3401b9e87fa01b5a33196e7543bcc"
+    },
+    {
+      "target": "03_骑手端/web/package-lock.json",
+      "sha256": "d77845b3860226931bc472dca248872a3327cd1442d848bee56284d71d4f9d71"
+    },
+    {
+      "target": "03_骑手端/web/package.json",
+      "sha256": "630a91822f61557d2ead8e501e5636340f169a4777711dba9280eab9b91dd113"
+    },
+    {
+      "target": "03_骑手端/web/public/favicon.svg",
+      "sha256": "08dd7fca11248f74c7b408be5542b3bb1050355c7c8b4caf9aacdad1b8837650"
+    },
+    {
+      "target": "03_骑手端/web/src/admin-input.ts",
+      "sha256": "9e144b9b6013a68da896e29e25eb122b966f2d084495a00fb2fc657a18e39750"
+    },
+    {
+      "target": "03_骑手端/web/src/api.ts",
+      "sha256": "2e3aa4ec271678e44983a9b4de87b542f87031dbbfc71939465a7cf55c1daeb1"
+    },
+    {
+      "target": "03_骑手端/web/src/App.tsx",
+      "sha256": "3b04f18f2bae6011abd34cdbfb5a0da70ab59ea655b02e10c5f012196ba32d42"
+    },
+    {
+      "target": "03_骑手端/web/src/auth.tsx",
+      "sha256": "425d52aa8710e48479389234e1b58e85a4d00343a32004544dbc84e40b32eab3"
+    },
+    {
+      "target": "03_骑手端/web/src/batch.d.ts",
+      "sha256": "2694fa5a7633044def403c09cfc01962503798aed81aedf7efc5aef93c527984"
+    },
+    {
+      "target": "03_骑手端/web/src/batch.js",
+      "sha256": "21b0356bdbfc69acafd7d916ecfb1a2678371e2e57bdf46dda07be4753d6ae29"
+    },
+    {
+      "target": "03_骑手端/web/src/BatchPanel.tsx",
+      "sha256": "221d0ecabb997e7c56c6d7a690877d9b518cdb60500bfc0666e359e4c84c3a8b"
+    },
+    {
+      "target": "03_骑手端/web/src/commands.ts",
+      "sha256": "e807ad9873d289a6a67ad569831d49ff53a249f9768e83dc2eb9a2ecedd2fc2c"
+    },
+    {
+      "target": "03_骑手端/web/src/components.tsx",
+      "sha256": "b0d69a77b2884ea4fbc5eadd8cb1395e6fbfd737bfd8ebdfa63b24884880ab8a"
+    },
+    {
+      "target": "03_骑手端/web/src/location.ts",
+      "sha256": "d4201795d2628ebb6e965e2506ac76a402268e7a0e3fc29d8fcc5d856a370e2d"
+    },
+    {
+      "target": "03_骑手端/web/src/main.tsx",
+      "sha256": "10678c5fffd857e4a654d92aef22f44c32ba0af5b71ada30b40cf8e39b157fc8"
+    },
+    {
+      "target": "03_骑手端/web/src/NotificationCenter.tsx",
+      "sha256": "16e9d3e46d0b2684a76278b421798d8cdaccea1ed5b82526a069b768590809b8"
+    },
+    {
+      "target": "03_骑手端/web/src/notifications.d.ts",
+      "sha256": "2e8592c9d5a7adfe78fc1defd2011e95f35d2e447688b67018ef4f0264eb448a"
+    },
+    {
+      "target": "03_骑手端/web/src/notifications.js",
+      "sha256": "0ba5c92ca567626da3a26671de278fa46800994d5db408446137024818622964"
+    },
+    {
+      "target": "03_骑手端/web/src/pages/Admin.tsx",
+      "sha256": "5d2ff8176aaf7384c67b2c31aa53fef37a2acec11db87668f5506e85050bf825"
+    },
+    {
+      "target": "03_骑手端/web/src/pages/Delivery.tsx",
+      "sha256": "79dc4b5da8c7a232f3e576067b4ea134ee230b95e35532d3edb66829c08d81f2"
+    },
+    {
+      "target": "03_骑手端/web/src/pages/DeliveryPoints.tsx",
+      "sha256": "d08628ea5040216bea42b9f92997e42cb2a6226539fa8e116e5f28479d95fcf9"
+    },
+    {
+      "target": "03_骑手端/web/src/pages/User.tsx",
+      "sha256": "056ca6c674ee832c563fac1aec3400b0e6b23b0a0ec37d6ed7082c82fa63dfe0"
+    },
+    {
+      "target": "03_骑手端/web/src/pending.d.ts",
+      "sha256": "725755faa4c06ff19552d4b16f696fd4d86f4f9b5860e797664254a237d138f8"
+    },
+    {
+      "target": "03_骑手端/web/src/pending.js",
+      "sha256": "58b753d057149a9a71ff9ddbc2b8f2388683a5e4d3ea440ccf57e6b049e4ea99"
+    },
+    {
+      "target": "03_骑手端/web/src/session.d.ts",
+      "sha256": "390660ced0888e69f6199c94ee01309ee8fb6b463cd28d752622c332427ad840"
+    },
+    {
+      "target": "03_骑手端/web/src/session.js",
+      "sha256": "c62f404ae339b57092d073789984bc8af719b6371f0a85b2f8bf7c34e9af5fdf"
+    },
+    {
+      "target": "03_骑手端/web/src/styles.css",
+      "sha256": "68153b318cbd5c45bf2e4b64b4814a9d39b2e34168ae2ebb3c4c9f7f28176e39"
+    },
+    {
+      "target": "03_骑手端/web/src/types.ts",
+      "sha256": "86b02bd5d437021ffb23b3392c6eb2a7245c5beb144427100ca3a4bba6829b0c"
+    },
+    {
+      "target": "03_骑手端/web/src/vite-env.d.ts",
+      "sha256": "1c3ebdcfd5f12c65faf4fedad95fe88ffafb11c8bc56eceeb75ddab6ae00fd30"
+    },
+    {
+      "target": "03_骑手端/web/tests/admin.test.mjs",
+      "sha256": "0c22a056931290afec9bad9eb03411cb0f7fb041b37a2991b0028bb07c402ea5"
+    },
+    {
+      "target": "03_骑手端/web/tests/batch.test.mjs",
+      "sha256": "949865ee334485589909115625ca0a6987f5dfa6c03a1c71e2c0241622a810ca"
+    },
+    {
+      "target": "03_骑手端/web/tests/notifications.test.mjs",
+      "sha256": "0f3737859ded25379305ab8602f19d9abafab18dcf730a3d2f77fd577fa8246b"
+    },
+    {
+      "target": "03_骑手端/web/tests/pending.test.mjs",
+      "sha256": "232e723584b998c32dc7c4fea9c58a3e473479b876babb8798a633cb0092d96e"
+    },
+    {
+      "target": "03_骑手端/web/tests/router.test.mjs",
+      "sha256": "4e6f7716270fb1d35f62365de9e3d86da6ee1c9b6ec1791ec7e3723590945412"
+    },
+    {
+      "target": "03_骑手端/web/tests/session.test.mjs",
+      "sha256": "2f586cb218bfa7bb464f6ddef51fabb8382dd42902993f085177928a1f29d66f"
+    },
+    {
+      "target": "03_骑手端/web/tsconfig.json",
+      "sha256": "fb6272a3ab9776b3b062024bbe68a0d4be3a86b677f9a37aa14aec1eb16c4a06"
+    },
+    {
+      "target": "03_骑手端/web/tsconfig.node.json",
+      "sha256": "b5805e4738367879e03012a1807daba34fc4dfbfab445472529f2611d4d41fb0"
+    },
+    {
+      "target": "03_骑手端/web/vite.config.ts",
+      "sha256": "435ced9bcf741d3cbe3f6aec939e7ee32bb9db64af41e69d3bc13e6d9f36aad9"
+    },
+    {
+      "target": "04_共用后端/.env.example",
+      "sha256": "40a81f8142c0c763aec139f4b03a7e85f7357fb08b5ac8bd26020480cdc0fa8c"
+    },
+    {
+      "target": "04_共用后端/.vscode/tasks.json",
+      "sha256": "78c9567e3d7997c3a9fc1b80adb234b483f9a73fb43a9f800e6fabf49f9992e8"
+    },
+    {
+      "target": "04_共用后端/AGENTS.md",
+      "sha256": "36152dd7b308f6983c43ff24219bb3714de84dad7b3631568e98282a4147d11c"
+    },
+    {
+      "target": "04_共用后端/backend/cmd/loadtest/main.go",
+      "sha256": "f7539197400e5104e1fa086613e776639e693cc96eb08ed684ea22a99eb23e88"
+    },
+    {
+      "target": "04_共用后端/backend/cmd/migrate/main.go",
+      "sha256": "83e3686d5cce4e05ac5d21d0c4dc7e655af839088f92f9c82308f6ce6050fb2b"
+    },
+    {
+      "target": "04_共用后端/backend/cmd/seed/main.go",
+      "sha256": "a6b3e2bfb28b754ee0f758028f0ff8532086038d4415bbf1dbc27ee69e262659"
+    },
+    {
+      "target": "04_共用后端/backend/cmd/server/main.go",
+      "sha256": "c050127feabf8c2f917d44254d88bcea026820c72739a2e0dc9a7036e0a126e4"
+    },
+    {
+      "target": "04_共用后端/backend/cmd/smoke/main.go",
+      "sha256": "7cb6782771f7be3cd3962d893c83e7970f0f1ae0c6f2523d37ef9886882f09ee"
+    },
+    {
+      "target": "04_共用后端/backend/go.mod",
+      "sha256": "8722ce57bd6deb8cd62d6f6a6b964217e8329df68cc7c3821756a3af7dff4993"
+    },
+    {
+      "target": "04_共用后端/backend/go.sum",
+      "sha256": "93779260042a577fef01fdad0e20564598846e018fe3d2e035c491c5fbbc1863"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/address.go",
+      "sha256": "b3264e6bfb9b1982ca39c1643b7f14481f7237b0a9eef5cbbd10662f0b9d3a61"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/admin.go",
+      "sha256": "9e6f79d4cce045eba01ec95a19f3342ce49a741845b73ffb01ebaddcf163eb8f"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/app.go",
+      "sha256": "e3cf4ba7f83533b02d901cf29647f33b326e482b5a04113080d21bbf515d4dd0"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/audit_atomicity_integration_test.go",
+      "sha256": "fa7e98936daba68814adba00b0e1dcacd9cd4793a4fa563a4ee4a352316ba1e1"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/auth.go",
+      "sha256": "f81108f2214733267cd8125e4e4bdd3ee28fb766ea87ee4507c6268313e89e5f"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/batch_contract_integration_test.go",
+      "sha256": "644e691a0ff9275c2f316e214a3f22be4c239e67a7783fbb19e71dbc8845881f"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/batch_orders_integration_test.go",
+      "sha256": "b4523f90bb42db79295afd3145d8bd0594eae13748049f3e382646f076bc0e6a"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/batch_orders.go",
+      "sha256": "20b60a2a01d580154386a5a3b38fe629309de8f2e4fb404b06e1ef3985e48064"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/catalog.go",
+      "sha256": "99c8c2ede48c96ab18b53dda88de903c56abf86deab407e9e39a489aa456b6dc"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/courier_batches.go",
+      "sha256": "b36f0603780d58a04edb42a40677b3ed2386949797c1b77027e565ccc9b9cb29"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/courier_capacity_legacy_integration_test.go",
+      "sha256": "4a55c9b9505eb7d02385b1c6e19748e6f781e7edc7431ace4cfe3db39772fe49"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/delivery_exception_resume_integration_test.go",
+      "sha256": "5443c31c854b86555d75da6979ae4b0f3762b28eb85f728118708de3f26db4b1"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/delivery_points.go",
+      "sha256": "ed81c958d4ea106832c672ecdcece6e15450c45bd43c6ca0f4b6cbc548771797"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/delivery_resume_picked_not_started_integration_test.go",
+      "sha256": "20bb6206cd700ac6e2176e8e323d03000f6db2970d9ddc49c3eec56b6401876b"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/delivery_test_location_test.go",
+      "sha256": "ee984b36e27cf9c127c9c437331470f72a0ec88a9b2e24acb2f94ee9bbc3ff5d"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/delivery_upgrade_integration_test.go",
+      "sha256": "07f6fbd69509011d860269d3f62e47ef35f53f81ff57c73a39f5fe1e14d1e634"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/delivery_upgrade_test.go",
+      "sha256": "026e9ce16afdff28be826996ddd094ba3eca324ed86e41165ed11981ab0b0e57"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/delivery.go",
+      "sha256": "822927d9540c9624b643a47c17692d187dd6092ab66340d53f8cff4f911273f2"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/execution_guards_integration_test.go",
+      "sha256": "033f05d6085f10433d679b3ad840d98987868f90639f32d072c941856766b264"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/helpers.go",
+      "sha256": "c00f67cb1deb5088e8e2cd94e2fcf221d92cad71a9ac85f6161e367c641de19c"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/integration_test.go",
+      "sha256": "40f7d4dcf79f50e54a6c07145bb17d220bc9d184159195d237e2ce3e1713d9b1"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/notifications_integration_test.go",
+      "sha256": "dcd37d3cf88f6cd6f6d40b496ba8444cc91eb942f3394f9bd620c5f8b3b6d5d7"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/notifications.go",
+      "sha256": "d4974f13bf5315008672b578d46e1c18cfdd99b423bb7c7ad098ae4907ecac0a"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/order_create.go",
+      "sha256": "290166f9d4c4717976083e1dcaf8c4d7a32d3d504bee616a06e986d0f15035b7"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/order_read.go",
+      "sha256": "574f54259bd3f65d4335ecf7696bbac9206a8f3460e53692613b075e6e00626b"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/payment_race_integration_test.go",
+      "sha256": "85bfb1d86a6c22077b7c062f077534aae9f21a770b7d5cd227ea31dca9bd8639"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/payment.go",
+      "sha256": "512484b26a5a9f67eec42ac7eedc66bd776f53930230bc56d94061ce0356d014"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/quote.go",
+      "sha256": "1c8de9d687b13befd9463a05b29c81e13c5d162982d1973942869bf28dc9caee"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/refund_event_integration_test.go",
+      "sha256": "bd85c158462198b5e5feb949addf46de7e15500049f7035b22a4716ebfbb6ca4"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/refund_event_test.go",
+      "sha256": "caae10198291df11e71ef3fb854ca69df69b671b7949ff36be245b91d99c179c"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/refund_integration_test.go",
+      "sha256": "9b9a5b9b3f28f7ff3b65289427d689bb28b66663eac4622deeb414eb67dbab5b"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/refund_normalize_test.go",
+      "sha256": "d5963321dd3e1858f228250b4e5ffcad477cadd8752fde7d4b483b876c525b3d"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/refund_recovery_integration_test.go",
+      "sha256": "0594f18bb32c2a6a28b4564cd80c459627d22d37b876b38159fe0336918e9105"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/refund_restock_integration_test.go",
+      "sha256": "4a54e171ab03720d1594c78f4e63d32d2419919ef6017da2154d29af4dcd6c6f"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/refunds.go",
+      "sha256": "870bf98b194cbd73e0f5f098399ab263c2afb6c92a08370de2bcf19586c2ee5d"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/reports.go",
+      "sha256": "be81735b25259816e7c6620b99bda796ca7d2f0b3e041950f8cccad065dc6c3e"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/stock_threshold_integration_test.go",
+      "sha256": "6fc38bfc69f66170fc7a45fbaf823f8db5b170b9a155974c799bac4ab36e4e24"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/types.go",
+      "sha256": "977db71e35d2ae5ae4c81f537f227177aaafa0cea2ef71f322deecf62aa9f8f4"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/unit_test.go",
+      "sha256": "920e601c5cc35f153058f030099ff70ffc9700965a68356d8459d89ecdf60e21"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/urges_integration_test.go",
+      "sha256": "fd281dc9906dd63f8432cf34ca35fe6efe03c759fcafff33f9b01f3f7eac3027"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/urges.go",
+      "sha256": "34b0098382ab607b546361f969f16f29bc180b8b5eb5d0fa736811c3e7c4b9e6"
+    },
+    {
+      "target": "04_共用后端/backend/internal/app/wechat.go",
+      "sha256": "90068473b11ad86d74b920ff4d4f8f3b0169314944fd96040d3443f31496f3ba"
+    },
+    {
+      "target": "04_共用后端/backend/internal/config/config.go",
+      "sha256": "bd492e006324eb35b11485f1732e105d59aae28a4db6bf05fa71b4c9cd78125d"
+    },
+    {
+      "target": "04_共用后端/backend/internal/db/db_test.go",
+      "sha256": "3fc39940f4dd0d3111956cca79eca6b548ccd1744b1c7429ba1a7e8fc941cb4c"
+    },
+    {
+      "target": "04_共用后端/backend/internal/db/db.go",
+      "sha256": "7f55a8944cdd930d1413f63b7abd1703c04366256ee8da49623f71d4cd4ee811"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0001_init.sql",
+      "sha256": "072314ac506395d2aaadedb153ea8507783126c571b977bd93c5d9e58bd4d8c3"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0002_order_urges.sql",
+      "sha256": "a67c496c282a8332a51972eb6ff333b9f1d0410fae9ddcb79e9a1e04e99aae50"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0003_refund_fix.sql",
+      "sha256": "856929313f17e627e8c8ec156eb48ebce6818a44b63df51814f031ad17fae395"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0004_refund_recovery.sql",
+      "sha256": "7bcbe3909076b6d98576a7f855af7295f458d8a5c605d9a9a28ff099855be38b"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0005_execution_guards.sql",
+      "sha256": "768e027da9c28ea65f3d694005b1bce5d26af375ccc7ad96eff30c72ae5a9421"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0006_delivery_exception_recovery.sql",
+      "sha256": "57ce8660a83fe574166b95c3c9fc08caaeedd44e20190bf7ff672ac0e1b2a507"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0007_sku_stock_threshold.sql",
+      "sha256": "f366747a3ba2c4d0f9f9ede0b50b4af5a576cdfb4d8942b36fc7fca1c93f494c"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0008_batch_operations.sql",
+      "sha256": "92c14b499d81c3e70a5d403432a6cccec1488cb90855c76b2e5c5c36110b7628"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0009_delivery_points.sql",
+      "sha256": "a0a21ae708189c974c86fa1aa546d76f4b7efdc7eecbeb2ce80dbcb2c02063b5"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0010_delivery_notifications.sql",
+      "sha256": "5b397cdac80ff7e9442b0df5269e2809da98677e85c65fd080712f2854d9955d"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0011_batch_integrity.sql",
+      "sha256": "30fcc81651fc57056dc60b420076583aa8b69d2045417656ad27b075ae7628a3"
+    },
+    {
+      "target": "04_共用后端/db/migrations/0012_courier_capacity_recovery.sql",
+      "sha256": "d5427de7df4e431b3445834da9a7e218f02ac5f9d53b8b5f8bb0292fc3499380"
+    },
+    {
+      "target": "04_共用后端/docs/批量配送接口与测试.md",
+      "sha256": "414a2ba5376ad5afd320e21519f58a4dcd0340bc135499a6256139d47218b1f3"
+    },
+    {
+      "target": "04_共用后端/README.md",
+      "sha256": "cdb46fa0802ff08d174efa26657697d4eb7d03d2fc1357fcf426fb6734a11557"
+    },
+    {
+      "target": "04_共用后端/scripts/backend.ps1",
+      "sha256": "f79f67b4f059896b15809bfd95aeeb00d1b5d152dbec9b117f11ab9eb9cae351"
+    },
+    {
+      "target": "04_共用后端/THIRD_PARTY_NOTICES.md",
+      "sha256": "18a0dedaa7c91bc0d341b846ac9339ef13d819da28282c46f465e0cac16ee4ae"
+    },
+    {
+      "target": "05_项目演示/~$校零智选_大创答辩_B向阳校园版.pptx",
+      "sha256": "24aa41c07f0095cdc7a74534c1f309f2d33ef76eb5fad9fdb6b67c9c61885eb0"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/index.html",
+      "sha256": "5ac8db49ac3f9a0ef9acaeb3d6d8c443b02db39ec3de104149ea099c6dea11ba"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/01.html",
+      "sha256": "dcb776605422d131f2bb97900b76f1fb26253236b2dcbb18c480e23a9ab1af0d"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/02.html",
+      "sha256": "427a950b8c78e6da537955835213bc3db10cba88b4be26b75662bab59d0c119f"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/03.html",
+      "sha256": "0f103744494df6aef31a2a4b0f37c2bc52d8f445a1139fd58760237f65f8e7d4"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/04.html",
+      "sha256": "81c340f2ad2e77cd84711338af6008e725b209cbae7b9e6c3f6e25fc0fb56979"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/05.html",
+      "sha256": "94b424c7cbbe61771af22690ee94832ec087469f12dfaf28f79fb532fbf9fb20"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/06.html",
+      "sha256": "f825ce38ca1a84f49ce7573cd444076ebab20b719fc80541ddb35794dbe444c0"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/07.html",
+      "sha256": "2a569c3dcaf581ba37e7443b8726401d0cf655d417063693b7f0d5941e82faa6"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/08.html",
+      "sha256": "1264b284601a695d9bec0d78e09199ffbabce899b516504f2785ee124d013fcf"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/09.html",
+      "sha256": "7a7e1b60db0d3d97833aa99c77ca91659356187a736a7383640e92a2a467c59f"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/10.html",
+      "sha256": "178d86ad900d09b26b868e1337d49cf63c2e1c52596ecfc2239eb0e755b692e9"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/11.html",
+      "sha256": "943fea33e18d64c79640e494fbd67717cd24c7e56b2d06ac05a5096319fc6fd5"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/12.html",
+      "sha256": "6884827a2ba064f07645c72a622f85043ebc123da661d33887e0f5d7f1f7c254"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/13.html",
+      "sha256": "d60f12427965dbc9c1a2b110b8b389c884dfcfcad2a217fa32e4e9f515c997a1"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/14.html",
+      "sha256": "4ff2f3e4581c55adc8d7b31ba6b342d6ea981973d22b3b726a90c3c6dac92254"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/15.html",
+      "sha256": "60a444aa1fe190f89ef85f3727ba04c5464370a83fdc6b0bb09a6996f9621b72"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/16.html",
+      "sha256": "b43180e11be7e2e1a953d5fe179532e402379190e3c01a9e7462d60590ba1a56"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/17.html",
+      "sha256": "a478a0d08f25dd3e83863de771096654e31591d57a6f4d96cab19b89a1e686e0"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/18.html",
+      "sha256": "b14bec0d2ec5a5699ff088a988e47c3b025099f49879a58e1deb98e306c7a703"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/19.html",
+      "sha256": "1ccfa1014dcf5e707df1c9d43fa9bb8ba3c03986a19dbfa2833d20d9180a5ad5"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/20.html",
+      "sha256": "ac6892ea89bf3a39416c39996ba4f2e17b48c666035c78d6c04c341d012e4a09"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/21.html",
+      "sha256": "4b8e30ad0960b1dd104c959394674a02aa064c35a9de4048d2ff952ed7dc92aa"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/22.html",
+      "sha256": "f8305175dbd0b5a3a795132099ac49f1531a8aaaec321cbd4fa3952b1fbca499"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/23.html",
+      "sha256": "4b52f42e01c3df385e255486e697a8dba70fbfa64d3154846a5898d6a5c5c091"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/24.html",
+      "sha256": "48a7871189a954710b1e44ab5964a35038f64e9bad14d620738307767d92b833"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/25.html",
+      "sha256": "dc040939c1be7b4f9529d3be93d980464d1de0690c898a6b5b1d8203758a7f24"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/slides/26.html",
+      "sha256": "829e63e0a9fcb865435c7e99a882f999dc4ecd8ced402927921ae1e49ac27f25"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/01.jpg",
+      "sha256": "b6eb0feef585149fb7e5c7f3528d0ddcb57ee43aeaf804bf6c9064359fd00508"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/02.jpg",
+      "sha256": "fc79415ea7374a77a1ad113057bf33a4b97bc0a4ff7ee6430229eff897805c30"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/03.jpg",
+      "sha256": "fd3c7de3aa04071832f33d7ec3f9f09797f3ee0ea60b0268ea81a5b638d09b65"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/04.jpg",
+      "sha256": "49fda5e1970f8f60d823f5eab320ee31a50a6a7a961191fa9e8d4e483c558d6c"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/05.jpg",
+      "sha256": "4a8bd6ddc0ac71289f4698f1f50ff97dc97e8a4e8a2f05fe566e298f593ab6f7"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/06.jpg",
+      "sha256": "02e1d23224012c850d810f483639bae9fc3a6b1395168ac68a5d9f6d496156e6"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/07.jpg",
+      "sha256": "7196e414973442d932e958b0f2e0b7ce0ae0c9300bb477f4b79306886f538f67"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/08.jpg",
+      "sha256": "ecdfc47e9f3fea513ecf047fb9979beaa2522c0f535019b0b6272ebfc51213ae"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/09.jpg",
+      "sha256": "55546f76b31e08730618c32f8f41f019589bfcbdc92e0ea1fb92708907c3aab1"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/10.jpg",
+      "sha256": "d615b8373a73bcc7d4c532f31c130e369657c751b71aae3e20084966d505b11b"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/11.jpg",
+      "sha256": "51a89d28a74d3a5aff82914046475c94125e8c228c41e0b6dd4ae282dc660251"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/12.jpg",
+      "sha256": "d38b16084973df58fabc00195dfa86f4f2af59ea97c1ab4b1e368cbb17cfd5b5"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/13.jpg",
+      "sha256": "648e6b41224f0701b8294ffcde7d60a96e2c9c916d82f2676716981cfcacf48c"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/14.jpg",
+      "sha256": "a747cccca414b96238e21078cbe680006831439ebf6e6123b49f3b033036a76c"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/15.jpg",
+      "sha256": "aa84a6057b621655b1e55fd1662fb3ee3fa08d19f0f87af321937b736fe22700"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/16.jpg",
+      "sha256": "2dcbfb35d8cf95b3f834ed0e1cc6c43c4b70d7e466f5e4bf9057a0f0bc50741e"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/17.jpg",
+      "sha256": "b32cdf1a77d53111492a2904ff34dba5559809f6dc11d26cf08a61273cd07c28"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/18.jpg",
+      "sha256": "b059d5839f98ad0421509c2e0066e10546b28a4d3c22ee4ce3dbf24f593ca23c"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/19.jpg",
+      "sha256": "b3bfc81b05214c41c55399669c7b55810b15c0cf9cf8c7fd52cd94a0d89f7f29"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/20.jpg",
+      "sha256": "d6f5024cb5fa29edf31302280c0d6d3540eaae398c2649d352babbc830497e6b"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/21.jpg",
+      "sha256": "12b63a999068fe0931bdbc73926fe7f7a3e30a59527ff6e3926bd591e792e9b0"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/22.jpg",
+      "sha256": "b56039bdd04a70a28669332d356728f814f54f299156f42440f89cdf19505b3d"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/23.jpg",
+      "sha256": "46ad20b4347ef3f97a48b20683459bc9737df3647999eb7a54f562843ce45e31"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/24.jpg",
+      "sha256": "8261140914254e52e31024aa7cfe5706d054b4cbdcfde2ef3d7624bb5f415a31"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/25.jpg",
+      "sha256": "480ae14bd8066db6d778bc5bdd9b228401d75dae32c7f81de8a454ae927a07be"
+    },
+    {
+      "target": "05_项目演示/竞赛科技_HTML浏览版/thumbs/26.jpg",
+      "sha256": "27c4434711b3a0b4aa155f829f972f3a8bed1053698db1c6f7f990ff97136c12"
+    },
+    {
+      "target": "05_项目演示/竞赛科技版_使用说明.md",
+      "sha256": "800fb641e952ad5858e1cd3e15b4d9ab0d0cbf7171254dcdfadb7cbb016ba8cf"
+    },
+    {
+      "target": "05_项目演示/竞赛科技版_数据口径.md",
+      "sha256": "828228323e2ba5a8d4145763dd36b59df109629b74b20bd01d47ee87f4a1a667"
+    },
+    {
+      "target": "05_项目演示/校零智选_大创答辩_竞赛科技版.pdf",
+      "sha256": "7f412f0185f22362370b159e27cc221e75a4d38067787f7fb0fdd4debb61b562"
+    },
+    {
+      "target": "05_项目演示/校零智选_大创答辩_竞赛科技版.pptx",
+      "sha256": "cb0173328eac8d587f7b6b2e24af920c60f329b6d2ca5e5d3cd3b0e6bb085f22"
+    },
+    {
+      "target": "05_项目演示/校零智选_大创答辩_B向阳校园版.pptx",
+      "sha256": "3fda4677affdfdabb22d0fd42b5e2c82c9d3880da119d6f8e1eab9d26b692374"
+    },
+    {
+      "target": "本次升级说明.md",
+      "sha256": "e674afbcce4f622d0c46e4b0a4407f75fe919fe95b4f0b8d3066d9a222eb3ceb"
+    },
+    {
+      "target": "检查项目.cmd",
+      "sha256": "8ddced8e7314807186b238f67cd066bec60a3bbec5aeea0b526cf64d156aa9a4"
+    },
+    {
+      "target": "交易闭环测试记录.md",
+      "sha256": "e1bed7553edf54c9d7064ddc3b3187db047a7b5f261ca057f8c236f3136c434a"
+    },
+    {
+      "target": "联通检验记录.md",
+      "sha256": "2b6837efbf5500d84791f1529fd9bb4dbba8b5b4bd374632a1f6606a906388f6"
+    },
+    {
+      "target": "启动项目.cmd",
+      "sha256": "e097421ded221f6a9dda081a2c162382ec03669a136f4fc0b77cf15dfb93d265"
+    },
+    {
+      "target": "清理记录.csv",
+      "sha256": "7f6bba082bae7549a1a4e99f8a8f758216105c324eec8210d165fa7e7d2e9352"
+    },
+    {
+      "target": "停止项目.cmd",
+      "sha256": "37793f8545351c34a7f633baa0520c3b231a1fbd35800d08639f8a805be7f5af"
+    },
+    {
+      "target": "校零智选.code-workspace",
+      "sha256": "4cf423ab27db222ed2d4a4f5de2acad89936d088d76c7d5a691591e89e95f05d"
+    },
+    {
+      "target": "验收记录.md",
+      "sha256": "dcb49c2dadcf1a1cff5af9fbefbd09346d6a9e0d4641fb2cf154d01c0a2f3847"
+    },
+    {
+      "target": "README_从这里开始.md",
+      "sha256": "24e5590d14d8184e5f6a44f00a80bf32838f9bf1bf66aa4fb0e535b1a8066dc0"
+    },
+    {
+      "target": "scripts/本机环境.ps1",
+      "sha256": "f53a30e37f8d5ebd85596a061deb159b7f49606248400567e451d8103a721250"
+    },
+    {
+      "target": "scripts/打包源码.ps1",
+      "sha256": "0e4419b361ccb68478a273ba97b2418ab7cfd2c111fbcdafd27a128823854ab3"
+    },
+    {
+      "target": "scripts/服务管理.ps1",
+      "sha256": "ea8960f2c7636a449bfc7aad7a366102c5808782e11c6f5d610ac348a3ea2181"
+    },
+    {
+      "target": "scripts/更新源码校验.ps1",
+      "sha256": "1a1d545859ee5792aa41483fd6778f773bde82eeed63c0ba9ec5ec5e5a16b566"
+    },
+    {
+      "target": "scripts/检查互通.ps1",
+      "sha256": "d0482494ddc955f43c4484452bea389f0fffa8a9d7887fea7ed173a6928711fd"
+    },
+    {
+      "target": "scripts/检查三端登录.ps1",
+      "sha256": "2f6709f620f23f4a17bd72e78cfc8b2cd975eb0dd3482d1a657b60d169dda1d5"
+    },
+    {
+      "target": "scripts/检查源码.ps1",
+      "sha256": "39b08c74404a5bed74974f2f498d78187af6c353df698d729a82b073391ae540"
+    },
+    {
+      "target": "scripts/验收批量契约.ps1",
+      "sha256": "10be8bbd808465cf54ee5a6931fa631614736669cccbeae384dd04f17e4bec93"
+    },
+    {
+      "target": "scripts/tests/merchant-batch-contract.mjs",
+      "sha256": "d02dcd11584038a16f3ae011eba0818b74fdeec20e01465ddd3bca294e548e0f"
+    }
+  ]
+}

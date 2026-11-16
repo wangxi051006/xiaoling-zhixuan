@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "name": "商家端前端",
+      "path": "01_商家端"
+    },
+    {
+      "name": "用户端前端",
+      "path": "02_用户端"
+    },
+    {
+      "name": "骑手端前端",
+      "path": "03_骑手端"
+    },
+    {
+      "name": "三端共用Go后端",
+      "path": "04_共用后端"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/.run": true
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.run": true
+    }
+  }
+}

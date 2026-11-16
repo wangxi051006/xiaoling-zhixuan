@@ -1,0 +1,13 @@
+.no { font-weight: 800; font-size: 30rpx; }
+.building { margin-top: 14rpx; font-size: 44rpx; font-weight: 800; letter-spacing: 1rpx; }
+.h { font-weight: 700; margin-bottom: 10rpx; }
+.line { display: flex; justify-content: space-between; padding: 12rpx 0; border-bottom: 1rpx solid #f0f2ee; font-size: 24rpx; }
+.line:last-child { border-bottom: 0; }
+.code-input { text-align: center; letter-spacing: 12rpx; font-size: 40rpx; height: 100rpx; }
+.note { height: 140rpx; padding: 16rpx; }
+.card .btn { width: 100%; margin-top: 12rpx; }
+.block { margin: 24rpx; }
+.urge-record { margin-top: 12rpx; padding: 12rpx 14rpx; background: #fafbf8; border: 1rpx solid #eef0ec; border-radius: 10rpx; font-size: 22rpx; }
+.urge-record .badge { margin-left: 8rpx; }
+.urge-card { background: #fffdf3; border-color: #ecd06b; }
+.small { font-size: 20rpx; }

@@ -1,0 +1,9 @@
+.h { font-size: 28rpx; font-weight: 700; margin-bottom: 14rpx; }
+.link { color: #2d5b9e; font-size: 22rpx; }
+.address { margin-top: 10rpx; padding: 18rpx; background: #f8f9f6; border-radius: 12rpx; font-size: 24rpx; }
+.line { display: flex; justify-content: space-between; padding: 12rpx 0; border-bottom: 1rpx solid #f0f2ee; font-size: 24rpx; }
+.line:last-child { border-bottom: none; }
+.total { margin-top: 12rpx; padding-top: 14rpx; border-top: 1rpx dashed #e4e6e2; font-size: 30rpx; font-weight: 800; }
+.small { margin-top: 10rpx; line-height: 1.6; }
+.foot { position: fixed; left: 0; right: 0; bottom: 0; padding: 18rpx 24rpx calc(18rpx + env(safe-area-inset-bottom)); background: #fff; border-top: 1rpx solid #e4e6e2; }
+.foot .btn { width: 100%; }

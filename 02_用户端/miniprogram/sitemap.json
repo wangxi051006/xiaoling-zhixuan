@@ -1,0 +1,4 @@
+{
+  "desc": "校零智选 sitemap",
+  "rules": [{ "action": "allow", "page": "*" }]
+}

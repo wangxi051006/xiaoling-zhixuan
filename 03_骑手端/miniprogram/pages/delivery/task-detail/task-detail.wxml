@@ -1,0 +1,47 @@
+<view class="page-pad"><view wx:if="{{pendingActions.length}}" class="notice"><view>有配送操作结果待确认，请恢复原请求，勿换参数重发。</view><button wx:for="{{pendingActions}}" wx:key="*this" data-action="{{item}}" bindtap="retryCommand" loading="{{busy}}">恢复 {{item}}</button></view>
+  <view wx:if="{{error}}" class="notice danger">{{error}}</view>
+  <view wx:if="{{loading}}" class="empty">加载中…</view>
+  <block wx:elif="{{task}}">
+    <view class="card">
+      <view class="row"><text class="no">#{{task.orderNo}}</text><text class="badge">{{task.status}}</text></view>
+      <view class="building">{{task.buildingName}}</view>
+      <view>{{task.addressText}}</view>
+      <view class="muted">联系人 {{task.contactName || '—'}} · {{task.phone || '—'}}</view>
+      <view class="muted">订单状态 {{task.orderStatus}} · 版本 v{{task.version}}</view>
+    </view>
+    <view class="card">
+      <view class="h">取货清单</view>
+      <view wx:for="{{task.items}}" wx:key="id" class="line">
+        <view><view>{{item.productName}}</view><view class="muted">{{item.specName}}</view></view>
+        <text>× {{item.quantity}}</text>
+      </view>
+    </view>
+    <view wx:if="{{task.urges.length}}" class="card urge-card">
+      <view class="h">用户催单</view>
+      <view class="muted">仅当前指派配送员可见；改派或完成后不再展示。催单不改变取货、签收和完成核验。</view>
+      <view wx:for="{{task.urges}}" wx:key="id" class="urge-record">
+        <view><text>第 {{item.urgeNumber}} 次</text><text class="muted"> {{item.timeText}}</text><text class="badge {{item.status === 'HANDLED' ? 'good' : 'warn'}}">{{item.status === 'HANDLED' ? '商家已处理' : '待商家处理'}}</text></view>
+        <view class="small">{{item.reason}}</view>
+      </view>
+    </view>
+    <view class="card">
+      <button wx:if="{{task.status === 'ACCEPTED' && task.orderStatus === 'READY'}}" class="btn" loading="{{busy}}" bindtap="pickup">我已按清单取货</button>
+      <button wx:if="{{task.status === 'PICKED_UP'}}" class="btn" loading="{{busy}}" bindtap="start">开始配送</button>
+      <block wx:if="{{task.status === 'DELIVERING'}}">
+        <view class="h">定位确认送达</view><view class="muted">配送点：{{task.deliveryPointName || '未配置，请联系商家'}}。到达后授权真实位置核验。</view><button class="btn" loading="{{busy}}" disabled="{{busy || !task.deliveryPointId}}" bindtap="complete">定位并确认送达</button>
+      </block>
+    </view>
+    <view wx:if="{{task.status === 'COMPLETED'}}" class="notice">配送已完成，联系信息已隐藏。</view>
+    <view wx:if="{{task.status === 'ACCEPTED' || task.status === 'PICKED_UP' || task.status === 'DELIVERING'}}" class="card">
+      <view class="h">异常处理</view>
+      <view class="muted">异常不等于送达；不会自动退款或回补库存。</view>
+      <picker mode="selector" range="{{types}}" range-key="label" bindchange="onType">
+        <view class="input">{{type}}</view>
+      </picker>
+      <textarea class="input note" value="{{note}}" bindinput="onNote" placeholder="说明情况，便于人工跟进" />
+      <button class="btn danger" loading="{{busy}}" bindtap="exception">登记异常</button>
+    </view>
+    <button class="btn ghost block" bindtap="goTasks">返回任务列表</button>
+  </block>
+</view>
+

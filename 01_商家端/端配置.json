@@ -1,0 +1,8 @@
+{
+  "folder": "01_商家端",
+  "role": "merchant",
+  "port": 5173,
+  "entry": "/admin/workbench",
+  "account": "12345678",
+  "name": "商家端"
+}

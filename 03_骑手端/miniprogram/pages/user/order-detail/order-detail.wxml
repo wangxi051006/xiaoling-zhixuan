@@ -1,0 +1,58 @@
+<view class="page-pad"><button class="small-btn" bindtap="goMessages">站内消息 · {{notificationUnread || 0}} 条未读</button></view>
+<view class="page-pad">
+  <view wx:if="{{error}}" class="notice danger">{{error}}</view>
+  <view wx:if="{{!order}}" class="empty">加载中…</view>
+  <block wx:else>
+    <view class="card">
+      <view class="row"><text class="no">#{{order.orderNo}}</text><text class="badge">{{statusText}}</text></view>
+      <view wx:if="{{order.isFirstOrder}}" class="first">新用户 · 首次下单（累计 {{order.customerOrderCount}} 次 / 本单第 {{order.customerOrderOrdinal}} 次）</view>
+      <view class="muted">创建 {{order.createdText}} · 支付 {{order.paymentStatus}}</view>
+      <view class="muted">地址：{{order.addressText}}</view><view wx:if="{{order.deliveryTask}}" class="muted">当前配送员：{{order.deliveryTask.assigneeName || '尚未指派'}}</view>
+    </view>
+    <view class="card">
+      <view class="h">商品</view>
+      <view wx:for="{{order.items}}" wx:key="id" class="line">
+        <view><view>{{item.productName}}</view><view class="muted">{{item.specName}} × {{item.quantity}}<text wx:if="{{item.refundedQuantity}}"> · 已退 {{item.refundedQuantity}}</text></view></view>
+        <text>{{item.goodsText}}</text>
+      </view>
+      <view class="row total"><text>合计</text><text>{{totalText}}</text></view>
+      <view class="muted">配送费 {{order.deliveryText}} · 商品 {{order.goodsText}}</view>
+    </view>
+    <view wx:if="{{order.events.length}}" class="card">
+      <view class="h">订单时间线</view>
+      <view wx:for="{{order.events}}" wx:key="id" class="event"><text>{{item.type}}</text><text class="muted">{{item.timeText}}</text></view>
+    </view>
+    <view wx:if="{{order.urge}}" class="card urge-card">
+      <view class="row"><text class="h">催单提醒</text><text class="muted">已催 {{order.urge.count}}/{{order.urge.maxPerOrder}} 次</text></view>
+      <view class="muted">最近 {{order.urge.lastText}} · 下次可催 {{order.urge.nextText}}</view>
+      <view class="{{order.urge.allowed ? 'urge-ok' : 'urge-reason'}}">{{order.urge.reason}}</view>
+      <button wx:if="{{urgePending}}" class="btn ghost" loading="{{urgeBusy}}" bindtap="retryUrge">结果待确认，用原请求重试</button>
+      <button wx:if="{{order.urge.allowed}}" class="btn" bindtap="toggleUrge">催一下</button>
+      <view wx:if="{{urgeOpen}}" class="urge-form">
+        <input class="input" value="{{urgeReason}}" maxlength="200" bindinput="onUrgeReason" placeholder="可补充原因" />
+        <button class="btn" loading="{{urgeBusy}}" bindtap="submitUrge">提交催单</button>
+      </view>
+      <view wx:for="{{order.urge.records}}" wx:key="id" class="urge-record">
+        <view><text>第 {{item.urgeNumber}} 次</text><text class="muted"> {{item.timeText}}</text><text class="badge {{item.status === 'HANDLED' ? 'good' : 'warn'}}">{{item.status === 'HANDLED' ? '商家已处理' : '待商家处理'}}</text></view>
+        <view class="muted">{{item.notificationText}}</view>
+        <view wx:if="{{item.reason}}" class="small">原因：{{item.reason}}</view>
+        <view wx:if="{{item.handlerName}}" class="muted small">处理人：{{item.handlerName}} · {{item.handleNote}}</view>
+      </view>
+      <view class="fine">催单只提醒商家/当前配送员，不改变金额、库存、支付、下单次数或履约承诺。</view>
+    </view>
+    <view wx:if="{{order.status === 'PENDING_PAYMENT'}}" class="card">
+      <button class="btn" loading="{{busy}}" bindtap="startPay">去支付</button>
+      <button class="btn ghost" bindtap="cancel">取消订单</button>
+    </view>
+    <view wx:if="{{attempt && attempt.simulated}}" class="card sim">
+      <view class="warn-title">仅测试环境 · 模拟支付</view>
+      <view class="muted">不会产生真实扣款；后端 inbox 消费后才变为已付。</view>
+      <button class="btn danger" loading="{{busy}}" bindtap="confirmSim">确认模拟支付（测试）</button>
+    </view>
+
+    <button class="btn ghost block" bindtap="goOrders">返回我的订单</button>
+  </block>
+</view>
+
+
+

@@ -1,0 +1,17 @@
+<view class="page-pad">
+ <view wx:if="{{error}}" class="notice danger">{{error}}</view>
+ <view class="head"><view class="title">配送任务</view><button class="small-btn" bindtap="refresh">刷新</button></view>
+ <view wx:if="{{capacity}}" class="notice">{{capacity.online ? '在线' : '离线'}} · 配送负载 {{capacity.activeTaskCount}}/{{capacity.taskLimit}} 单</view>
+ <view class="card"><view class="h">批量处理</view><view class="muted">每批最多 20 单。状态或版本变化后自动取消勾选。</view>
+  <view wx:if="{{pending}}" class="notice"><view>有批次待确认：{{pending.requestId}}</view><button bindtap="resumeBatch" loading="{{busy}}">恢复原批次并继续</button></view>
+  <picker range="{{actions}}" bindchange="selectAction" disabled="{{busy || pending}}"><view class="input">当前：{{action === 'CLAIM' ? '领取任务' : action === 'PICKUP' ? '核对并取货' : '同点送达'}} ▾</view></picker>
+  <view class="row"><button class="small-btn" bindtap="selectAll" disabled="{{busy || pending}}">当前页全选（最多 20 单）</button><button class="small-btn" bindtap="clearSelected">清空</button></view>
+  <view wx:for="{{candidates}}" wx:key="id" class="line" data-id="{{item.id}}" bindtap="toggle"><checkbox checked="{{item.selected}}" disabled="{{busy || pending}}"/><view>#{{item.orderNo}} · v{{item.version}}<view class="muted">{{item.deliveryPointName || item.buildingName}}</view></view></view>
+  <view wx:if="{{!candidates.length}}" class="empty">当前没有可执行该操作的任务</view>
+  <button class="btn" bindtap="submitBatch" disabled="{{!selectedCount || busy || pending}}" loading="{{busy}}">确认处理 {{selectedCount}} 单</button>
+  <view wx:if="{{result}}"><view>已处理 {{result.completedCount}}/{{result.expectedCount}} · 待确认 {{result.pendingCount}}</view><view wx:for="{{result.items}}" wx:key="taskId" class="line">任务 {{item.taskId}} · {{item.result === 'SUCCESS' ? '成功' : item.result === 'FAILED' ? '失败' : '待确认'}}<view>{{item.message || item.code}}</view></view></view>
+ </view>
+ <view class="section">我的任务</view><view class="muted">取货后进入任务详情，点击“开始配送”。配送点未配置时请联系商家。</view>
+ <view wx:if="{{!mine.length && !loading}}" class="empty">还没有领取任务</view>
+ <view wx:for="{{mine}}" wx:key="id" class="card" data-id="{{item.id}}" bindtap="open"><view class="row"><text class="no">#{{item.orderNo}}</text><text class="badge">{{item.status}}</text></view><view>{{item.deliveryPointName || '未配置配送点'}} · {{item.buildingName}}</view><view class="muted">{{item.contactName}} {{item.phone}}</view><view class="link">查看与操作 →</view></view>
+</view>

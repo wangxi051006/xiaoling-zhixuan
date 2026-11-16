@@ -1,0 +1,504 @@
+[
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "ACCEPT",
+        "batchId": "1",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 3
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 3
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "02477d70371a7bfb7cbc6248"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions/1",
+    "method": "GET",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "batchId": "1",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "expectedVersion": 2,
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS"
+          },
+          {
+            "code": "",
+            "expectedVersion": 2,
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS"
+          }
+        ],
+        "kind": "ORDER_ACCEPT",
+        "pendingCount": 0,
+        "requestId": "http_smoke_a97a07e905974a37be0c356736ed2d9c",
+        "status": "DONE"
+      },
+      "traceId": "62d683c89731a86cc5b8301f"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions/1/resume",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "ACCEPT",
+        "batchId": "1",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 3
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 3
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "5256f32675be896cc3d1c9e5"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "READY",
+        "batchId": "3",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 4
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 4
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "077b94a76973b8bb54dafae2"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions/3",
+    "method": "GET",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "batchId": "3",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "expectedVersion": 3,
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS"
+          },
+          {
+            "code": "",
+            "expectedVersion": 3,
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS"
+          }
+        ],
+        "kind": "ORDER_READY",
+        "pendingCount": 0,
+        "requestId": "http_smoke_44a50fa9e0614945ad6bfc19a1abe71f",
+        "status": "DONE"
+      },
+      "traceId": "40511929309c349be2d290fb"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions/3/resume",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "READY",
+        "batchId": "3",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 4
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 4
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "85c987402ed7c8e2f3a8c61c"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "ACCEPT",
+        "batchId": "1",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 3
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 3
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "6adee5dd14851633b6d199a8"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "READY",
+        "batchId": "3",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 4
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 4
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "03a6475557c1e18209b03f67"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "ACCEPT",
+        "batchId": "1",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 3
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 3
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "8e84068d828382a351770ec0"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "READY",
+        "batchId": "3",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 4
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 4
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "8565ba06f8e1d6391d396821"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "ACCEPT",
+        "batchId": "1",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 3
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 3
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "c366a024093cc6b1c0b1119f"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "READY",
+        "batchId": "3",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 4
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 4
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "d9e480d62a3ec7df92c8fc2d"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "action": "ACCEPT",
+        "batchId": "1",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS",
+            "version": 3
+          },
+          {
+            "code": "",
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS",
+            "version": 3
+          }
+        ],
+        "pendingCount": 0,
+        "status": "DONE"
+      },
+      "traceId": "f4031705c93733d151488024"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions?requestId=http_smoke_a97a07e905974a37be0c356736ed2d9c&action=ACCEPT",
+    "method": "GET",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "batchId": "1"
+      },
+      "traceId": "68094a0cd1d9f6908f73bb42"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions/1",
+    "method": "GET",
+    "httpStatus": 200,
+    "reply": {
+      "code": "OK",
+      "message": "",
+      "data": {
+        "batchId": "1",
+        "completedCount": 2,
+        "expectedCount": 2,
+        "items": [
+          {
+            "code": "",
+            "expectedVersion": 2,
+            "message": "",
+            "orderId": "6",
+            "result": "SUCCESS"
+          },
+          {
+            "code": "",
+            "expectedVersion": 2,
+            "message": "",
+            "orderId": "7",
+            "result": "SUCCESS"
+          }
+        ],
+        "kind": "ORDER_ACCEPT",
+        "pendingCount": 0,
+        "requestId": "http_smoke_a97a07e905974a37be0c356736ed2d9c",
+        "status": "DONE"
+      },
+      "traceId": "7b2d4486253fefd2d09221a0"
+    }
+  },
+  {
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "httpStatus": 409,
+    "reply": {
+      "code": "IDEMPOTENCY_CONFLICT",
+      "message": "同一 requestId 携带了不同的批量参数",
+      "traceId": "78ad82e5fcac2deed492b3a4"
+    }
+  }
+]

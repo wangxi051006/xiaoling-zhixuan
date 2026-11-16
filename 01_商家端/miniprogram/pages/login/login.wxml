@@ -1,0 +1,22 @@
+<view class="login">
+  <view class="hero">
+    <view class="logo">校</view>
+    <view class="title">校零智选</view>
+    <view class="sub">校园里的刚刚好</view>
+  </view>
+  <view class="form">
+    <view class="field">手机号<input class="input" value="{{phone}}" bindinput="onPhone" /></view>
+    <view class="field">密码<input class="input" password value="{{password}}" bindinput="onPassword" /></view>
+    <view wx:if="{{error}}" class="notice danger">{{error}}</view>
+    <button class="btn" loading="{{busy}}" bindtap="submit">登录</button>
+    <view wx:if="{{demo}}" class="demo">
+      <view class="demo-title">本地演示账号</view>
+      <view class="demo-row">
+        <button class="mini" data-phone="13900000001" bindtap="useDemo">顾客</button>
+        <button class="mini" data-phone="13800000004" bindtap="useDemo">配送员</button>
+        <button class="mini" data-phone="13800000001" bindtap="useDemo">店长（网页端）</button>
+      </view>
+      <view class="fine">密码由 DEMO_PASSWORD 配置；正式环境不会创建默认账号。</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "folder": "02_用户端",
+  "role": "user",
+  "port": 5174,
+  "entry": "/user",
+  "account": "12345679",
+  "name": "用户端"
+}

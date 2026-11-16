@@ -1,0 +1,40 @@
+<view class="page-pad">
+  <view wx:if="{{pending}}" class="notice">
+    <text>有一笔结算结果未知</text>
+    <button class="btn small" loading="{{busy}}" bindtap="retryPending">用原请求恢复</button>
+  </view>
+  <view wx:if="{{error}}" class="notice danger">{{error}}</view>
+  <view class="card">
+    <view class="row"><text class="h">配送地址</text><text class="link" bindtap="toggleAddress">{{addressOpen ? '收起' : '新增'}}</text></view>
+    <picker wx:if="{{addresses.length}}" mode="selector" range="{{addresses}}" range-key="display" value="{{0}}" bindchange="onAddress">
+      <view class="address">{{selectedAddress ? selectedAddress.display : '选择地址'}}</view>
+    </picker>
+    <view wx:else class="muted">还没有地址，请新增本人服务地址</view>
+    <view wx:if="{{addressOpen}}">
+      <view class="field">楼栋<picker mode="selector" range="{{buildings}}" range-key="name" bindchange="onBuilding">
+        <view class="input">{{form.buildingId ? '已选楼栋 ' + form.buildingId : '选择楼栋'}}</view>
+      </picker></view>
+      <view class="field">联系人<input class="input" data-field="contactName" bindinput="onField" /></view>
+      <view class="field">手机号<input class="input" data-field="phone" bindinput="onField" /></view>
+      <view class="field">门牌/交付点<input class="input" data-field="detail" bindinput="onField" /></view>
+      <button class="btn" bindtap="createAddress">保存地址</button>
+    </view>
+  </view>
+  <view class="card">
+    <view class="h">商品</view>
+    <view wx:for="{{cart}}" wx:key="skuId" class="line">
+      <view><view>{{item.name}}</view><view class="muted">{{item.spec}} × {{item.quantity}}</view></view>
+      <text>{{item.lineTotalText}}</text>
+    </view>
+  </view>
+  <view wx:if="{{quote}}" class="card">
+    <view class="row"><text>商品</text><text>{{quote.goodsText}}</text></view>
+    <view class="row"><text>配送费</text><text>{{quote.deliveryText}}</text></view>
+    <view class="row total"><text>合计</text><text>{{quote.totalText}}</text></view>
+    <view class="muted small">报价有效期至 {{quote.expiresText}}；提交时服务端重新核价并整单预留库存。</view>
+  </view>
+  <view class="foot">
+    <button wx:if="{{!quote}}" class="btn" loading="{{busy}}" bindtap="quote">获取服务端报价</button>
+    <button wx:else class="btn" loading="{{busy}}" bindtap="submit">提交订单</button>
+  </view>
+</view>

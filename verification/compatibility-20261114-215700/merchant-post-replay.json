@@ -1,0 +1,28 @@
+{
+  "code": "OK",
+  "message": "",
+  "data": {
+    "action": "ACCEPT",
+    "batchId": "1",
+    "completedCount": 2,
+    "expectedCount": 2,
+    "items": [
+      {
+        "code": "",
+        "message": "",
+        "orderId": "6",
+        "result": "SUCCESS",
+        "version": 3
+      },
+      {
+        "code": "",
+        "message": "",
+        "orderId": "7",
+        "result": "SUCCESS",
+        "version": 3
+      }
+    ],
+    "status": "DONE"
+  },
+  "traceId": "76a394db5366619a279939cc"
+}

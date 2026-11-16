@@ -1,0 +1,227 @@
+[
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/auth/staff/login",
+    "method": "POST",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5174,
+    "ok": true,
+    "path": "/auth/login",
+    "method": "POST",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5175,
+    "ok": true,
+    "path": "/auth/staff/login",
+    "method": "POST",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/workbench",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/orders?limit=50",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/inventory",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/reports/dashboard",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/reports/daily-sku-sales",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/audit-logs",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/urges",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/staff",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/delivery-points",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5174,
+    "ok": true,
+    "path": "/orders?limit=50",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5174,
+    "ok": true,
+    "path": "/addresses",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5174,
+    "ok": true,
+    "path": "/notifications?afterId=0&limit=50",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5175,
+    "ok": true,
+    "path": "/courier/tasks",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5175,
+    "ok": true,
+    "path": "/courier/tasks/available",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5175,
+    "ok": true,
+    "path": "/courier/capacity",
+    "method": "GET",
+    "code": "OK",
+    "expected": 200,
+    "status": 200
+  },
+  {
+    "port": 5173,
+    "ok": true,
+    "path": "/admin/orders/batch-actions",
+    "method": "POST",
+    "code": "INVALID_BATCH_SIZE",
+    "expected": 422,
+    "status": 422
+  },
+  {
+    "port": 5175,
+    "ok": true,
+    "path": "/courier/tasks/batch-actions",
+    "method": "POST",
+    "code": "INVALID_BATCH_SIZE",
+    "expected": 422,
+    "status": 422
+  },
+  {
+    "port": 5174,
+    "ok": true,
+    "path": "/admin/orders",
+    "method": "GET",
+    "code": "STAFF_REQUIRED",
+    "expected": 403,
+    "status": 403
+  },
+  {
+    "port": 5174,
+    "ok": true,
+    "path": "/courier/tasks",
+    "method": "GET",
+    "code": "STAFF_REQUIRED",
+    "expected": 403,
+    "status": 403
+  },
+  {
+    "port": 5175,
+    "ok": true,
+    "path": "/admin/orders",
+    "method": "GET",
+    "code": "CAPABILITY_REQUIRED",
+    "expected": 403,
+    "status": 403
+  },
+  {
+    "port": 5174,
+    "ok": true,
+    "path": "/notifications",
+    "method": "GET",
+    "code": "UNAUTHENTICATED",
+    "expected": 401,
+    "status": 401
+  },
+  {
+    "port": 5174,
+    "ok": true,
+    "path": "/orders/0/receipt-code",
+    "method": "GET",
+    "code": "RECEIPT_CODE_RETIRED",
+    "expected": 410,
+    "status": 410
+  }
+]

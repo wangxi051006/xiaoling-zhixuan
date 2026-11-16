@@ -1,0 +1,8 @@
+{
+  "folder": "03_骑手端",
+  "role": "courier",
+  "port": 5175,
+  "entry": "/delivery/tasks",
+  "account": "12345680",
+  "name": "骑手端"
+}

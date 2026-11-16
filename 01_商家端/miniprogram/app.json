@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/user/home/home",
+    "pages/user/checkout/checkout",
+    "pages/user/orders/orders",
+    "pages/user/order-detail/order-detail",
+    "pages/user/profile/profile",
+    "pages/user/messages/messages",
+    "pages/delivery/tasks/tasks",
+    "pages/delivery/task-detail/task-detail"
+  ],
+  "window": {
+    "navigationBarTitleText": "校零智选",
+    "navigationBarBackgroundColor": "#FFD84D",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#F5F6F7"
+  },
+  "permission": { "scope.userLocation": { "desc": "配送员到达配送点后，用真实位置核验送达" } },
+  "requiredPrivateInfos": ["getLocation"],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
+

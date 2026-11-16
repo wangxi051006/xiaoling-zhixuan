@@ -1,0 +1,30 @@
+{
+  "code": "OK",
+  "message": "",
+  "data": {
+    "batchId": "1",
+    "completedCount": 2,
+    "expectedCount": 2,
+    "items": [
+      {
+        "code": "",
+        "expectedVersion": 2,
+        "message": "",
+        "orderId": "6",
+        "result": "SUCCESS"
+      },
+      {
+        "code": "",
+        "expectedVersion": 2,
+        "message": "",
+        "orderId": "7",
+        "result": "SUCCESS"
+      }
+    ],
+    "kind": "ORDER_ACCEPT",
+    "pendingCount": 0,
+    "requestId": "http_smoke_a97a07e905974a37be0c356736ed2d9c",
+    "status": "DONE"
+  },
+  "traceId": "5f51157c62f4fdfdd0c69f74"
+}

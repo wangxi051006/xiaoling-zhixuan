@@ -1,0 +1,43 @@
+<view class="page-pad"><button class="small-btn" bindtap="goMessages">站内消息 · {{notificationUnread || 0}} 条未读</button></view>
+<view class="page-pad">
+  <view class="hero">
+    <view class="row">
+      <view>
+        <view class="eyebrow">CAMPUS RETAIL · 紫荆店</view>
+        <view class="title">今天想吃什么？</view>
+        <view class="sub">服务端报价 · 付款后履约</view>
+      </view>
+      <view class="avatar">校</view>
+    </view>
+    <view class="row hero-actions">
+      <view class="quick" bindtap="goOrders">我的订单</view>
+      <view class="quick" bindtap="goProfile">个人中心</view>
+    </view>
+  </view>
+  <view class="search-box">
+    <input placeholder="搜索零食、饮料…" value="{{keyword}}" bindinput="onKeyword" />
+  </view>
+  <scroll-view class="cats" scroll-x show-scrollbar="{{false}}">
+    <view class="cat {{categoryId === '' ? 'active' : ''}}" data-id="" bindtap="chooseCategory">全部</view>
+    <view wx:for="{{categories}}" wx:key="id" class="cat {{categoryId === item.id ? 'active' : ''}}" data-id="{{item.id}}" bindtap="chooseCategory">{{item.name}}</view>
+  </scroll-view>
+  <view wx:if="{{error}}" class="notice danger">{{error}} <text class="retry" bindtap="load">重试</text></view>
+  <view wx:if="{{loading}}" class="empty">正在加载商品…</view>
+  <view wx:elif="{{!filtered.length}}" class="empty">没有匹配商品</view>
+  <view class="grid">
+    <view wx:for="{{filtered}}" wx:key="id" class="product">
+      <view class="emoji">{{item.emoji}}</view>
+      <view class="pname">{{item.name}}</view>
+      <view class="pspec muted">{{item.specName}} · {{item.available > 0 ? '库存 ' + item.available : '售罄'}}</view>
+      <view class="row pfoot">
+        <text class="money">{{item.priceText}}</text>
+        <button class="add" disabled="{{item.soldOut}}" data-id="{{item.id}}" bindtap="add">＋</button>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{cartCount}}" class="cartbar">
+    <view><text class="cart-title">购物车 {{cartCount}} 件</text><text class="muted">{{cartTotal}}</text></view>
+    <button class="btn" bindtap="goCheckout">去结算</button>
+  </view>
+</view>
+

@@ -1,0 +1,13 @@
+<view class="page-pad"><button class="small-btn" bindtap="goMessages">站内消息 · {{notificationUnread || 0}} 条未读</button></view>
+<view class="page-pad">
+  <view wx:if="{{error}}" class="notice danger">{{error}} <text class="retry" bindtap="load">重试</text></view>
+  <view wx:if="{{loading}}" class="empty">加载中…</view>
+  <view wx:elif="{{!orders.length}}" class="empty">还没有订单 <view class="link" bindtap="goHome">去逛逛</view></view>
+  <view wx:for="{{orders}}" wx:key="id" class="card order" data-id="{{item.id}}" bindtap="detail">
+    <view class="row"><text class="no">#{{item.orderNo}}</text><text class="badge">{{item.statusText}}</text></view>
+    <view class="row"><text class="muted">{{item.timeText}} · {{item.itemCount}} 件</text><text class="money">{{item.totalText}}</text></view>
+    <view wx:if="{{item.isFirstOrder}}" class="first">新用户 · 首次下单（累计 {{item.customerOrderCount}} 次 / 本单第 {{item.customerOrderOrdinal}} 次）</view>
+    <view class="link">查看进度 →</view>
+  </view>
+</view>
+

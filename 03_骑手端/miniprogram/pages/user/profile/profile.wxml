@@ -1,0 +1,12 @@
+<view class="page-pad"><button class="small-btn" bindtap="goMessages">站内消息 · {{notificationUnread || 0}} 条未读</button></view>
+<view class="page-pad">
+  <view class="card me">
+    <view class="avatar">校</view>
+    <view><view class="name">{{user.nickname}}</view><view class="muted">{{user.phone}} · {{roleText}}</view></view>
+  </view>
+  <view class="card menu" bindtap="goOrders"><text>我的订单</text><text>→</text></view>
+  <view wx:if="{{isCourier}}" class="card menu" bindtap="goDelivery"><text>配送任务</text><text>→</text></view>
+  <view class="card menu" bindtap="logout"><text>退出登录</text><text>→</text></view>
+  <view class="muted tip">真实环境不展示默认密码；员工权限由管理员在网页端配置并留审计。</view>
+</view>
+

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="校零智选">
+  <rect width="64" height="64" rx="14" fill="#ffd84d"/>
+  <path d="M18 30h28v6H18z" fill="#1f2126"/>
+  <circle cx="24" cy="20" r="4" fill="#1f2126"/>
+  <circle cx="40" cy="20" r="4" fill="#1f2126"/>
+</svg>
